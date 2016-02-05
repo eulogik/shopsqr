@@ -1,0 +1,41 @@
+{
+  "name": "Variant",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "label": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "specs": {
+      "type": [
+        "object"
+      ]
+    },
+    "price": {
+      "type": "number",
+      "comments": "MRP"
+    },
+    "salePrice": {
+      "type": "number",
+      "comments": "price to customers"
+    },
+    "published": {
+      "type": "boolean"
+    },
+    "sku": {
+      "type": "string",
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
