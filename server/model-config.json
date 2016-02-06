@@ -45,5 +45,15 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "Address": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Cart": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }
