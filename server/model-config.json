@@ -61,5 +61,17 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "stockEntry": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Customer": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }
