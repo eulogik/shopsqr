@@ -55,5 +55,11 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "Order": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }
