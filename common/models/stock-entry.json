@@ -6,7 +6,20 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "quantity": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "note": {
+      "type": "string"
+    }
+  },
   "validations": [],
   "relations": {
     "variant": {
