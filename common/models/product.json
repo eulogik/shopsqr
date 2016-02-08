@@ -15,7 +15,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "variants": {
+      "type": "hasMany",
+      "model": "Variant",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

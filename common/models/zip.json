@@ -1,26 +1,26 @@
 {
-  "name": "Category",
+  "name": "Zip",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "zip": {
       "type": "string"
     },
-    "slug": {
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
       "type": "string"
     }
   },
   "validations": [],
-  "relations": {
-    "category": {
-      "type": "belongsTo",
-      "model": "Category",
-      "foreignKey": ""
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

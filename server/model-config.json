@@ -73,5 +73,9 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "Zip": {
+    "dataSource": "db",
+    "public": true
   }
 }

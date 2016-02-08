@@ -8,7 +8,13 @@
   },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "variant": {
+      "type": "belongsTo",
+      "model": "Variant",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
