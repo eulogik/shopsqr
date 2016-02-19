@@ -13,6 +13,16 @@
       "type": "hasMany",
       "model": "Address",
       "foreignKey": ""
+    },
+    "carts": {
+      "type": "hasMany",
+      "model": "Cart",
+      "foreignKey": ""
+    },
+    "orders": {
+      "type": "hasMany",
+      "model": "Order",
+      "foreignKey": ""
     }
   },
   "acls": [],

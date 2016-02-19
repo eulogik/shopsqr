@@ -1,0 +1,49 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Product": 3,
+    "Category": 1,
+    "Variant": 7,
+    "Address": 1,
+    "Cart": 4,
+    "Order": 1,
+    "stockEntry": 1,
+    "Customer": 2,
+    "Zip": 1
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Product": {
+      "1": "{\"description\":\"iPhone 6 is an designed by Apple iPhone Company based on U.S \",\"title\":\"iPhone 6\",\"id\":1}",
+      "2": "{\"description\":\"Samsung Galaxy A6 new launched with 4K display\",\"title\":\"Samsung Galaxy A6\",\"id\":2}"
+    },
+    "Category": {},
+    "Variant": {
+      "1": "{\"label\":\"golden\",\"quantity\":0,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":68000,\"published\":true,\"sku\":\"101\",\"productId\":1,\"id\":1}",
+      "2": "{\"label\":\"black\",\"quantity\":0,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":68000,\"published\":true,\"sku\":\"102\",\"productId\":1,\"id\":2}",
+      "3": "{\"label\":\"white\",\"quantity\":0,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":68000,\"published\":true,\"sku\":\"103\",\"productId\":1,\"id\":3}",
+      "4": "{\"label\":\"golden\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":35000,\"salePrice\":39000,\"published\":true,\"sku\":\"104\",\"productId\":2,\"id\":4}",
+      "5": "{\"label\":\"white\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":32000,\"salePrice\":36000,\"published\":true,\"sku\":\"105\",\"productId\":2,\"id\":5}",
+      "6": "{\"label\":\"black\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":32000,\"salePrice\":36000,\"published\":true,\"sku\":\"106\",\"productId\":2,\"id\":6}"
+    },
+    "Address": {},
+    "Cart": {
+      "2": "{\"customerId\":1,\"title\":\"iPhone 6\",\"variant\":\"golden\",\"price\":68000,\"quantity\":2,\"productId\":1,\"id\":2}",
+      "3": "{\"customerId\":1,\"title\":\"Samsung Galaxy A6\",\"variant\":\"white\",\"price\":36000,\"quantity\":3,\"productId\":2,\"id\":3}"
+    },
+    "Order": {},
+    "stockEntry": {},
+    "Customer": {
+      "1": "{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"id\":1}"
+    },
+    "Zip": {}
+  }
+}
