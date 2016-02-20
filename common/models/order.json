@@ -15,7 +15,7 @@
     "customer": {
       "type": "object"
     },
-    "address": {
+    "billing": {
       "type": "object"
     },
     "shipping": {
@@ -25,9 +25,7 @@
       "type": "object"
     },
     "status": {
-      "type": [
-        "object"
-      ]
+      "type": "string"
     }
   },
   "validations": [],

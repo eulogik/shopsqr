@@ -6,7 +6,20 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "variantId": {
+      "type": "number"
+    },
+    "variantPrice": {
+      "type": "number"
+    },
+    "variantSalePrice": {
+      "type": "number"
+    },
+    "quantity": {
+      "type": "number"
+    }
+  },
   "validations": [],
   "relations": {
     "customer": {

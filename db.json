@@ -11,7 +11,7 @@
     "Address": 2,
     "Cart": 4,
     "Order": 5,
-    "stockEntry": 9,
+    "stockEntry": 12,
     "Customer": 2,
     "Zip": 1
   },
@@ -27,7 +27,7 @@
     },
     "Category": {},
     "Variant": {
-      "1": "{\"label\":\"golden\",\"quantity\":8,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":68000,\"published\":true,\"sku\":\"101\",\"productId\":1,\"id\":1}",
+      "1": "{\"label\":\"golden\",\"quantity\":10,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":68000,\"published\":true,\"sku\":\"101\",\"productId\":1,\"id\":1}",
       "2": "{\"label\":\"black\",\"quantity\":0,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":68000,\"published\":true,\"sku\":\"102\",\"productId\":1,\"id\":2}",
       "3": "{\"label\":\"white\",\"quantity\":0,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":68000,\"published\":true,\"sku\":\"103\",\"productId\":1,\"id\":3}",
       "4": "{\"label\":\"golden\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":35000,\"salePrice\":39000,\"published\":true,\"sku\":\"104\",\"productId\":2,\"id\":4}",
@@ -42,7 +42,7 @@
       "3": "{\"customerId\":1,\"title\":\"Samsung Galaxy A6\",\"variant\":\"white\",\"price\":36000,\"quantity\":3,\"productId\":2,\"id\":3}"
     },
     "Order": {
-      "3": "{\"cart\":[{\"customerId\":1,\"variantId\":1,\"productId\":1,\"productTitle\":\"iPhone 6\",\"price\":62000,\"salesPrice\":68000,\"quantity\":2}],\"address\":{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza\",\"phone\":\"9926724315\",\"instructions\":\"please deliver   it carefully\",\"id\":1,\"customerId\":1},\"shipping\":{\"method\":\"Red Cart Courier\"},\"payment\":{\"method\":\"COD\"},\"status\":[{\"stage\":\"Quality Assurance\"}],\"id\":3,\"customerId\":1,\"customer\":{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"id\":1}}"
+      "3": "{\"cart\":[{\"customerId\":1,\"variantId\":1,\"productId\":1,\"productTitle\":\"iPhone 6\",\"price\":62000,\"salesPrice\":68000,\"quantity\":2}],\"address\":{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza\",\"phone\":\"9926724315\",\"instructions\":\"please deliver   it carefully\",\"id\":1,\"customerId\":1},\"shipping\":{\"method\":\"Red Cart Courier\"},\"payment\":{\"method\":\"COD\"},\"status\":\"packed\",\"id\":3,\"customerId\":1,\"customer\":{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"id\":1}}"
     },
     "stockEntry": {
       "3": "{\"quantity\":6,\"createdBy\":\"10\",\"createdAt\":\"2016-02-20T00:00:00.000Z\",\"note\":\"stock added\",\"variantId\":1,\"id\":3}",
@@ -50,7 +50,10 @@
       "5": "{\"quantity\":6,\"createdBy\":\"10\",\"createdAt\":\"2016-02-20T00:00:00.000Z\",\"note\":\"stock added\",\"variantId\":1,\"id\":5}",
       "6": "{\"quantity\":-2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T08:57:50.005Z\",\"note\":\"product purchased with quantity2\",\"variantId\":1,\"id\":6}",
       "7": "{\"quantity\":null,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T09:40:08.131Z\",\"note\":\"product purchased with quantity undefined\",\"id\":7}",
-      "8": "{\"quantity\":-2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T09:46:18.018Z\",\"note\":\"product purchased with quantity 2\",\"variantId\":1,\"id\":8}"
+      "8": "{\"quantity\":-2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T09:46:18.018Z\",\"note\":\"product purchased with quantity 2\",\"variantId\":1,\"id\":8}",
+      "9": "{\"quantity\":2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T12:17:40.032Z\",\"note\":\"product cancelled (returned) with quantity 2\",\"variantId\":1,\"id\":9}",
+      "10": "{\"quantity\":-2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T12:21:02.743Z\",\"note\":\"product purchased with quantity 2\",\"variantId\":1,\"id\":10}",
+      "11": "{\"quantity\":2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T12:21:20.643Z\",\"note\":\"product cancelled (returned) with quantity 2\",\"variantId\":1,\"id\":11}"
     },
     "Customer": {
       "1": "{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"id\":1}"

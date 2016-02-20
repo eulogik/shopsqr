@@ -16,7 +16,7 @@ module.exports = function(StockEntry) {
 			}
 			else
 			{
-				console.log(result);
+				// console.log(result);
 				var totalQuantity = result.quantity + ctx.instance.quantity;
 
 				/* This function is for updating the variant quantity when stock has added or updated of that particular variant */
