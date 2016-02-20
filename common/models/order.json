@@ -6,7 +6,30 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "cart": {
+      "type": [
+        "object"
+      ]
+    },
+    "customer": {
+      "type": "object"
+    },
+    "address": {
+      "type": "object"
+    },
+    "shipping": {
+      "type": "object"
+    },
+    "payment": {
+      "type": "object"
+    },
+    "status": {
+      "type": [
+        "object"
+      ]
+    }
+  },
   "validations": [],
   "relations": {
     "customer": {

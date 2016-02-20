@@ -2,7 +2,7 @@ module.exports = function(Cart) {
 
 	Cart.viewCart = function(data, cb)
 	{
-
+		console.log(data);
 		cb(null, data);
 	}
 	Cart.remoteMethod(
