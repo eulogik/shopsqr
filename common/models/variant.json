@@ -7,9 +7,6 @@
     "validateUpsert": true
   },
   "properties": {
-    "label": {
-      "type": "string"
-    },
     "quantity": {
       "type": "number"
     },
@@ -35,6 +32,10 @@
     },
     "image": {
       "type": "string"
+    },
+    "label": {
+      "type": "string",
+      "index": true
     }
   },
   "validations": [],

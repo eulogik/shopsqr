@@ -15,6 +15,12 @@
     },
     "brand": {
       "type": "string"
+    },
+    "tags": {
+      "type": [
+        "string"
+      ],
+      "index": true
     }
   },
   "validations": [],

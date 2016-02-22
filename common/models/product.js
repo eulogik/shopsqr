@@ -49,6 +49,34 @@ module.exports = function(Product) {
 	Product.search = function(data, cb)
 	{
 		console.log(data);
+		var searched = [];
+
+		Product.find({where: {or:[{title: {like: data.search}},{brand: {like: data.search}}], include:{relation:'variants'}}, function(err, result)
+		{
+		
+			if(result.length != 0)
+			{
+				result.forEach(function(record)
+				{
+					searched.push(record.toJSON());
+					cb(null, result);
+				});
+			}
+			// console.log(searched);
+		});
+
+		// Product.app.models.Variant.find({where: {label: {like: data.search}}, include:{relation:'product'}}, function(err, result)
+		// {
+		// 	if(result.length != 0)
+		// 	{
+		// 		result.forEach(function(record)
+		// 		{
+		// 			searched.push(record.toJSON());
+		// 			cb(null, result);
+		// 		});
+		// 	}
+		// 	console.log(searched);
+		// })
 	}
 
 	Product.remoteMethod(
