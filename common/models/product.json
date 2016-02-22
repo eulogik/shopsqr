@@ -12,6 +12,9 @@
     "title": {
       "type": "string",
       "index": true
+    },
+    "brand": {
+      "type": "string"
     }
   },
   "validations": [],

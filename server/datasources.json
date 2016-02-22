@@ -3,5 +3,21 @@
     "name": "db",
     "connector": "memory",
     "file": "db.json"
+  },
+  "Email": {
+    "name": "Email",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "auth": {
+          "user": "sumit.khajanchi@eulogik.com",
+          "pass": "**********"
+        }
+      }
+    ]
   }
 }

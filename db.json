@@ -12,7 +12,7 @@
     "Cart": 4,
     "Order": 5,
     "stockEntry": 12,
-    "Customer": 2,
+    "Customer": 3,
     "Zip": 1
   },
   "models": {
@@ -22,8 +22,8 @@
     "RoleMapping": {},
     "Role": {},
     "Product": {
-      "1": "{\"description\":\"iPhone 6 is an designed by Apple iPhone Company based on U.S \",\"title\":\"iPhone 6\",\"id\":1}",
-      "2": "{\"description\":\"Samsung Galaxy A6 new launched with 4K display\",\"title\":\"Samsung Galaxy A6\",\"id\":2}"
+      "1": "{\"description\":\"iPhone 6 is an designed by Apple iPhone Company based on U.S \",\"title\":\"iPhone 6\",\"brand\":\"iphone\",\"id\":1}",
+      "2": "{\"description\":\"Samsung Galaxy A6 new launched with 4K display\",\"title\":\"Samsung Galaxy A6\",\"brand\":\"samsung\",\"id\":2}"
     },
     "Category": {},
     "Variant": {
@@ -56,7 +56,8 @@
       "11": "{\"quantity\":2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T12:21:20.643Z\",\"note\":\"product cancelled (returned) with quantity 2\",\"variantId\":1,\"id\":11}"
     },
     "Customer": {
-      "1": "{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"id\":1}"
+      "1": "{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"id\":1}",
+      "2": "{\"password\":\"$2a$10$EjufRRvAk/GKZasEoeqYAevSM3nrzFzlMBerG5H/h4rNqqlfiFf/G\",\"email\":\"akshay.shrivastava@eulogik.com\",\"firstName\":\"Akshay\",\"lastName\":\"Shrivastava\",\"id\":2}"
     },
     "Zip": {}
   }

@@ -26,6 +26,12 @@
     },
     "status": {
       "type": "string"
+    },
+    "paymentMethod": {
+      "type": "string"
+    },
+    "paymentStatus": {
+      "type": "string"
     }
   },
   "validations": [],

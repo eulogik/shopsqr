@@ -32,6 +32,9 @@
     "sku": {
       "type": "string",
       "index": true
+    },
+    "image": {
+      "type": "string"
     }
   },
   "validations": [],

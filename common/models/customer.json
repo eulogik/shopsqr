@@ -1,6 +1,6 @@
 {
   "name": "Customer",
-  "base": "PersistedModel",
+  "base": "User",
   "strict": false,
   "idInjection": false,
   "options": {

@@ -32,6 +32,9 @@
     "dataSource": "db",
     "public": false
   },
+  "Email": {
+    "dataSource": "Email"
+  },
   "Product": {
     "dataSource": "db",
     "public": true
