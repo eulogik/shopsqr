@@ -23,6 +23,11 @@
       "type": "hasMany",
       "model": "Variant",
       "foreignKey": ""
+    },
+    "category": {
+      "type": "belongsTo",
+      "model": "Category",
+      "foreignKey": ""
     }
   },
   "acls": [],

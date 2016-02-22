@@ -19,6 +19,11 @@
       "type": "belongsTo",
       "model": "Category",
       "foreignKey": ""
+    },
+    "products": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": ""
     }
   },
   "acls": [],
