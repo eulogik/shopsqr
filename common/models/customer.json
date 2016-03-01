@@ -1,6 +1,6 @@
 {
   "name": "Customer",
-  "base": "User",
+  "base": "PersistedModel",
   "strict": false,
   "idInjection": false,
   "options": {
@@ -22,6 +22,11 @@
     "orders": {
       "type": "hasMany",
       "model": "Order",
+      "foreignKey": ""
+    },
+    "users": {
+      "type": "hasOne",
+      "model": "User",
       "foreignKey": ""
     }
   },

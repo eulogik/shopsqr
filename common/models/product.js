@@ -51,9 +51,9 @@ module.exports = function(Product) {
 		console.log(data);
 		var searched = [];
 
-		Product.find({where: {or:[{title: {like: data.search}},{brand: {like: data.search}}], include:{relation:'variants'}}, function(err, result)
+		Product.find({where: {or:[{title: {like: data.search}},{brand: {like: data.search}}]}, include:{relation:'variants'}}, function(err, result)
 		{
-		
+			
 			if(result.length != 0)
 			{
 				result.forEach(function(record)
@@ -61,6 +61,10 @@ module.exports = function(Product) {
 					searched.push(record.toJSON());
 					cb(null, result);
 				});
+			}
+			else
+			{
+				cb(null, []);
 			}
 			// console.log(searched);
 		});

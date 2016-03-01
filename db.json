@@ -1,13 +1,13 @@
 {
   "ids": {
-    "User": 1,
-    "AccessToken": 1,
+    "User": 2,
+    "AccessToken": 11,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "Product": 3,
+    "Product": 7,
     "Category": 1,
-    "Variant": 7,
+    "Variant": 13,
     "Address": 2,
     "Cart": 4,
     "Order": 5,
@@ -16,14 +16,24 @@
     "Zip": 1
   },
   "models": {
-    "User": {},
-    "AccessToken": {},
+    "User": {
+      "1": "{\"firstName\":\"Super\",\"lastName\":\"Admin\",\"password\":\"$2a$10$l29hDCRpj.mWASCkB0Wmue7X/54htrlOdFyr7oj74vqd7FN0NJUBy\",\"role\":\"super_admin\",\"email\":\"demo@eulogik.com\",\"createdAt\":\"2016-02-11T09:09:26.912Z\",\"id\":1}"
+    },
+    "AccessToken": {
+      "STEwEwRbLzybbz86EiSiA1oGIBq1E7cwnXaXTr6nA1nNiQuYrBSBoyTmvv8eXYOx": "{\"id\":\"STEwEwRbLzybbz86EiSiA1oGIBq1E7cwnXaXTr6nA1nNiQuYrBSBoyTmvv8eXYOx\",\"ttl\":1209600,\"created\":\"2016-02-23T07:05:10.005Z\",\"userId\":1}",
+      "gOwJ6FAqDaRhx9qOnIkfMsbV5PDGFYGpdXxBxHCQUWUNH7UB5wBk2tTmLwxX14ad": "{\"id\":\"gOwJ6FAqDaRhx9qOnIkfMsbV5PDGFYGpdXxBxHCQUWUNH7UB5wBk2tTmLwxX14ad\",\"ttl\":1209600,\"created\":\"2016-02-23T10:28:25.010Z\",\"userId\":1}",
+      "rBhU0tyc6Px0YGfosdJGoZcsSDKGOGKOErlIzDnQihpNM0oIAKAs8bMlUg2YAtAo": "{\"id\":\"rBhU0tyc6Px0YGfosdJGoZcsSDKGOGKOErlIzDnQihpNM0oIAKAs8bMlUg2YAtAo\",\"ttl\":1209600,\"created\":\"2016-02-23T11:03:38.048Z\",\"userId\":1}",
+      "UJAdizGXXDF556fJ9C7GWNe7PY0srink42jlbInP9ulVgWIaoGqZiuuG3nh1cuNa": "{\"id\":\"UJAdizGXXDF556fJ9C7GWNe7PY0srink42jlbInP9ulVgWIaoGqZiuuG3nh1cuNa\",\"ttl\":1209600,\"created\":\"2016-02-25T09:32:11.652Z\",\"userId\":1}",
+      "GlVu6ftOYJjCOfaOWDcbbraFCOCffFPkzjUZtZOM09lvgVOYyOhalsaUiZmswI0j": "{\"id\":\"GlVu6ftOYJjCOfaOWDcbbraFCOCffFPkzjUZtZOM09lvgVOYyOhalsaUiZmswI0j\",\"ttl\":1209600,\"created\":\"2016-02-26T12:59:57.680Z\",\"userId\":1}"
+    },
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
     "Product": {
       "1": "{\"description\":\"iPhone 6 is an designed by Apple iPhone Company based on U.S \",\"title\":\"iPhone 6\",\"brand\":\"iphone\",\"id\":1}",
-      "2": "{\"description\":\"Samsung Galaxy A6 new launched with 4K display\",\"title\":\"Samsung Galaxy A6\",\"brand\":\"samsung\",\"id\":2}"
+      "2": "{\"description\":\"Samsung Galaxy A6 new launched with 4K display\",\"title\":\"Samsung Galaxy A6\",\"brand\":\"samsung\",\"id\":2}",
+      "5": "{\"description\":\"sadsdasdas\",\"title\":\"Demo Task\",\"brand\":\"asdasdasdasd\",\"tags\":[\"asdasdasd\"],\"id\":5}",
+      "6": "{\"description\":\"Lorem Ipsum dolor sit amet\",\"title\":\"Motorola G3\",\"brand\":\"Motorola`\",\"tags\":[\"moto g3\"],\"id\":6}"
     },
     "Category": {},
     "Variant": {
@@ -32,7 +42,13 @@
       "3": "{\"label\":\"white\",\"quantity\":0,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":62000,\"published\":true,\"sku\":\"103\",\"productId\":1,\"id\":3}",
       "4": "{\"label\":\"golden\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":35000,\"salePrice\":39000,\"published\":true,\"sku\":\"104\",\"productId\":2,\"id\":4}",
       "5": "{\"label\":\"white\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":32000,\"salePrice\":36000,\"published\":true,\"sku\":\"105\",\"productId\":2,\"id\":5}",
-      "6": "{\"label\":\"black\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":32000,\"salePrice\":34000,\"published\":true,\"sku\":\"106\",\"productId\":2,\"id\":6}"
+      "6": "{\"label\":\"black\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":32000,\"salePrice\":34000,\"published\":true,\"sku\":\"106\",\"productId\":2,\"id\":6}",
+      "7": "{\"quantity\":0,\"specs\":[{\"title\":\"Network\",\"description\":\"2G, 3G, 4G\"},{\"title\":\"Processor\",\"description\":\"1.4 GHz Quad Core CPU\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P001\",\"image\":\"\",\"label\":\"Black\",\"id\":7}",
+      "8": "{\"quantity\":0,\"specs\":[{\"title\":\"Network\",\"description\":\"2G, 3G, 4G\"},{\"title\":\"Processor\",\"description\":\"1.4 GHz Quad Core CPU\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P002\",\"image\":\"\",\"label\":\"White\",\"id\":8}",
+      "9": "{\"quantity\":0,\"specs\":[{\"title\":\"fgdfgdfg\",\"description\":\"jkhjkhjk\"},{\"title\":\"jhkhjkhjk\",\"description\":\"werwerewr\"}],\"price\":34234324,\"salePrice\":324234,\"published\":true,\"sku\":\"rtret4325345\",\"image\":\"\",\"label\":\"sdfsdfsdfsdf\",\"id\":9}",
+      "10": "{\"quantity\":0,\"specs\":[{\"title\":\"sdfdfsd\",\"description\":\"gjkjkjh\"},{\"title\":\"hjkhjkhjk\",\"description\":\"hjkhjkhjkhj\"}],\"price\":455435,\"salePrice\":4353453,\"published\":true,\"sku\":\"p54656drtg\",\"image\":\"\",\"label\":\"retertert\",\"id\":10}",
+      "11": "{\"quantity\":0,\"specs\":[{\"title\":\"Network\",\"description\":\"2G, 3G,4G\"},{\"title\":\"Battery\",\"description\":\"2407 mAh\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P001\",\"image\":\"\",\"label\":\"Black\",\"productId\":6,\"id\":11}",
+      "12": "{\"quantity\":0,\"specs\":[{\"title\":\"Network\",\"description\":\"2G, 3G, 4G\"},{\"title\":\"Battery\",\"description\":\"2407mAh\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P002\",\"image\":\"\",\"label\":\"White\",\"productId\":6,\"id\":12}"
     },
     "Address": {
       "1": "{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza, M.P Nagar Zone-2\",\"phone\":\"9926724315\",\"instructions\":\"Please deliver it safely\",\"customerId\":1,\"id\":1}"
@@ -42,7 +58,7 @@
       "3": "{\"customerId\":1,\"title\":\"Samsung Galaxy A6\",\"variant\":\"white\",\"price\":36000,\"quantity\":3,\"productId\":2,\"id\":3}"
     },
     "Order": {
-      "3": "{\"cart\":[{\"customerId\":1,\"variantId\":1,\"productId\":1,\"productTitle\":\"iPhone 6\",\"price\":62000,\"salesPrice\":68000,\"quantity\":2}],\"address\":{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza\",\"phone\":\"9926724315\",\"instructions\":\"please deliver   it carefully\",\"id\":1,\"customerId\":1},\"shipping\":{\"method\":\"Red Cart Courier\"},\"payment\":{\"method\":\"COD\"},\"status\":\"packed\",\"id\":3,\"customerId\":1,\"customer\":{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"id\":1}}"
+      "3": "{\"cart\":[{\"customerId\":1,\"variantId\":1,\"productId\":1,\"productTitle\":\"iPhone 6\",\"price\":62000,\"salesPrice\":68000,\"quantity\":2}],\"address\":{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza\",\"phone\":\"9926724315\",\"instructions\":\"please deliver   it carefully\",\"id\":1,\"customerId\":1},\"shipping\":{\"method\":\"Red Cart Courier\"},\"payment\":{\"method\":\"COD\"},\"status\":\"pending\",\"id\":3,\"customerId\":1,\"createdAt\":\"2016-02-20T00:00:00.000Z\",\"updatedAt\":\"2016-02-22T00:00:00.000Z\",\"customer\":{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"id\":1}}"
     },
     "stockEntry": {
       "3": "{\"quantity\":6,\"createdBy\":\"10\",\"createdAt\":\"2016-02-20T00:00:00.000Z\",\"note\":\"stock added\",\"variantId\":1,\"id\":3}",
