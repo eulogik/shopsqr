@@ -5,9 +5,9 @@
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "Product": 7,
-    "Category": 1,
-    "Variant": 13,
+    "Product": 4,
+    "Category": 6,
+    "Variant": 9,
     "Address": 2,
     "Cart": 4,
     "Order": 5,
@@ -32,10 +32,11 @@
     "Product": {
       "1": "{\"description\":\"iPhone 6 is an designed by Apple iPhone Company based on U.S \",\"title\":\"iPhone 6\",\"brand\":\"iphone\",\"id\":1}",
       "2": "{\"description\":\"Samsung Galaxy A6 new launched with 4K display\",\"title\":\"Samsung Galaxy A6\",\"brand\":\"samsung\",\"id\":2}",
-      "5": "{\"description\":\"sadsdasdas\",\"title\":\"Demo Task\",\"brand\":\"asdasdasdasd\",\"tags\":[\"asdasdasd\"],\"id\":5}",
-      "6": "{\"description\":\"Lorem Ipsum dolor sit amet\",\"title\":\"Motorola G3\",\"brand\":\"Motorola`\",\"tags\":[\"moto g3\"],\"id\":6}"
+      "3": "{\"description\":\"Advanced IPX7 water resistance, a 13 MP rear camera and a 5 MP front camera, a long-lasting 2470 mAh battery and Android Lollipop. Meet the beautifully crafted Moto G (3rd Gen), the phone that'll always be there for you.\",\"title\":\"Motorola G3\",\"brand\":\"Motorola\",\"tags\":[\"moto g3\",\"motorola g3\"],\"id\":3}"
     },
-    "Category": {},
+    "Category": {
+      "5": "{\"name\":\"Electronics\",\"categoryId\":0,\"root\":true,\"createdAt\":\"2016-03-02T12:34:33.000Z\",\"updatedAt\":\"2016-03-02T12:34:33.000Z\",\"id\":5}"
+    },
     "Variant": {
       "1": "{\"label\":\"golden\",\"quantity\":10,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":68000,\"published\":true,\"sku\":\"101\",\"productId\":1,\"id\":1}",
       "2": "{\"label\":\"black\",\"quantity\":0,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":65000,\"published\":true,\"sku\":\"102\",\"productId\":1,\"id\":2}",
@@ -43,12 +44,8 @@
       "4": "{\"label\":\"golden\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":35000,\"salePrice\":39000,\"published\":true,\"sku\":\"104\",\"productId\":2,\"id\":4}",
       "5": "{\"label\":\"white\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":32000,\"salePrice\":36000,\"published\":true,\"sku\":\"105\",\"productId\":2,\"id\":5}",
       "6": "{\"label\":\"black\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":32000,\"salePrice\":34000,\"published\":true,\"sku\":\"106\",\"productId\":2,\"id\":6}",
-      "7": "{\"quantity\":0,\"specs\":[{\"title\":\"Network\",\"description\":\"2G, 3G, 4G\"},{\"title\":\"Processor\",\"description\":\"1.4 GHz Quad Core CPU\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P001\",\"image\":\"\",\"label\":\"Black\",\"id\":7}",
-      "8": "{\"quantity\":0,\"specs\":[{\"title\":\"Network\",\"description\":\"2G, 3G, 4G\"},{\"title\":\"Processor\",\"description\":\"1.4 GHz Quad Core CPU\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P002\",\"image\":\"\",\"label\":\"White\",\"id\":8}",
-      "9": "{\"quantity\":0,\"specs\":[{\"title\":\"fgdfgdfg\",\"description\":\"jkhjkhjk\"},{\"title\":\"jhkhjkhjk\",\"description\":\"werwerewr\"}],\"price\":34234324,\"salePrice\":324234,\"published\":true,\"sku\":\"rtret4325345\",\"image\":\"\",\"label\":\"sdfsdfsdfsdf\",\"id\":9}",
-      "10": "{\"quantity\":0,\"specs\":[{\"title\":\"sdfdfsd\",\"description\":\"gjkjkjh\"},{\"title\":\"hjkhjkhjk\",\"description\":\"hjkhjkhjkhj\"}],\"price\":455435,\"salePrice\":4353453,\"published\":true,\"sku\":\"p54656drtg\",\"image\":\"\",\"label\":\"retertert\",\"id\":10}",
-      "11": "{\"quantity\":0,\"specs\":[{\"title\":\"Network\",\"description\":\"2G, 3G,4G\"},{\"title\":\"Battery\",\"description\":\"2407 mAh\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P001\",\"image\":\"\",\"label\":\"Black\",\"productId\":6,\"id\":11}",
-      "12": "{\"quantity\":0,\"specs\":[{\"title\":\"Network\",\"description\":\"2G, 3G, 4G\"},{\"title\":\"Battery\",\"description\":\"2407mAh\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P002\",\"image\":\"\",\"label\":\"White\",\"productId\":6,\"id\":12}"
+      "7": "{\"quantity\":0,\"specs\":[{\"title\":\"Brand\",\"description\":\"Motorola\"},{\"title\":\"Model Name\",\"description\":\"Moto G (3rd Generation)\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 13 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 5 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G, 2G\"},{\"title\":\"WiFi\",\"description\":\"Yes, 802.11 b/g/n\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P001\",\"image\":\"\",\"label\":\"Black\",\"productId\":3,\"id\":7}",
+      "8": "{\"quantity\":0,\"specs\":[{\"title\":\"Brand\",\"description\":\"Motorola\"},{\"title\":\"Model Name\",\"description\":\"Moto G (3rd Generation)\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 13 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 5 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G, 2G\"},{\"title\":\"WiFi\",\"description\":\"Yes, 802.11 b/g/n\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P002\",\"image\":\"\",\"label\":\"White\",\"productId\":3,\"id\":8}"
     },
     "Address": {
       "1": "{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza, M.P Nagar Zone-2\",\"phone\":\"9926724315\",\"instructions\":\"Please deliver it safely\",\"customerId\":1,\"id\":1}"
