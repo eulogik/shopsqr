@@ -48,9 +48,23 @@ module.exports = function(Product) {
 
 	Product.search = function(data, cb)
 	{
-		console.log(data);
-		var searched = [];
+		/* This search method is used for search only products not with variants as our need from front end */
+		// Product.find({where: {or:[{title: {like: data.search}},{brand: {like: data.search}}]}}, function(err, result)
+		// {
+		// 	if(result.length != 0)
+		// 	{
+		// 		cb(null, result);
+		// 		console.log(result);
+		// 	}
+		// 	else
+		// 	{
+		// 		cb(null, []);
+		// 	}
+		// });
 
+		/* This search Method is used for search the product with its variant */
+		// console.log(data);
+		var searched = [];
 		Product.find({where: {or:[{title: {like: data.search}},{brand: {like: data.search}}]}, include:{relation:'variants'}}, function(err, result)
 		{
 			

@@ -1,0 +1,44 @@
+{
+  "name": "Settings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "number"
+    },
+    "phone": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "emailAccount": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

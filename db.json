@@ -1,18 +1,18 @@
 {
   "ids": {
     "User": 2,
-    "AccessToken": 11,
+    "AccessToken": 14,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "Product": 4,
-    "Category": 6,
-    "Variant": 9,
-    "Address": 2,
+    "Product": 6,
+    "Category": 20,
+    "Variant": 12,
+    "Address": 5,
     "Cart": 4,
     "Order": 5,
     "stockEntry": 12,
-    "Customer": 3,
+    "Customer": 4,
     "Zip": 1
   },
   "models": {
@@ -24,7 +24,8 @@
       "gOwJ6FAqDaRhx9qOnIkfMsbV5PDGFYGpdXxBxHCQUWUNH7UB5wBk2tTmLwxX14ad": "{\"id\":\"gOwJ6FAqDaRhx9qOnIkfMsbV5PDGFYGpdXxBxHCQUWUNH7UB5wBk2tTmLwxX14ad\",\"ttl\":1209600,\"created\":\"2016-02-23T10:28:25.010Z\",\"userId\":1}",
       "rBhU0tyc6Px0YGfosdJGoZcsSDKGOGKOErlIzDnQihpNM0oIAKAs8bMlUg2YAtAo": "{\"id\":\"rBhU0tyc6Px0YGfosdJGoZcsSDKGOGKOErlIzDnQihpNM0oIAKAs8bMlUg2YAtAo\",\"ttl\":1209600,\"created\":\"2016-02-23T11:03:38.048Z\",\"userId\":1}",
       "UJAdizGXXDF556fJ9C7GWNe7PY0srink42jlbInP9ulVgWIaoGqZiuuG3nh1cuNa": "{\"id\":\"UJAdizGXXDF556fJ9C7GWNe7PY0srink42jlbInP9ulVgWIaoGqZiuuG3nh1cuNa\",\"ttl\":1209600,\"created\":\"2016-02-25T09:32:11.652Z\",\"userId\":1}",
-      "GlVu6ftOYJjCOfaOWDcbbraFCOCffFPkzjUZtZOM09lvgVOYyOhalsaUiZmswI0j": "{\"id\":\"GlVu6ftOYJjCOfaOWDcbbraFCOCffFPkzjUZtZOM09lvgVOYyOhalsaUiZmswI0j\",\"ttl\":1209600,\"created\":\"2016-02-26T12:59:57.680Z\",\"userId\":1}"
+      "yh6sIXZVfPJopjgruMz5dfY5AADhG4LgqVYWxD3OAEemdsGv9WlchRr4o7GfDNRD": "{\"id\":\"yh6sIXZVfPJopjgruMz5dfY5AADhG4LgqVYWxD3OAEemdsGv9WlchRr4o7GfDNRD\",\"ttl\":1209600,\"created\":\"2016-03-07T07:03:51.059Z\",\"userId\":1}",
+      "IReP1Ipy9nUobaAWBuG5Vtoyjyv2GPm3GwFkpmEKqVyA8FCX0XJeoPRf2Qec4Pb1": "{\"id\":\"IReP1Ipy9nUobaAWBuG5Vtoyjyv2GPm3GwFkpmEKqVyA8FCX0XJeoPRf2Qec4Pb1\",\"ttl\":1209600,\"created\":\"2016-03-07T09:58:12.482Z\",\"userId\":1}"
     },
     "ACL": {},
     "RoleMapping": {},
@@ -32,10 +33,22 @@
     "Product": {
       "1": "{\"description\":\"iPhone 6 is an designed by Apple iPhone Company based on U.S \",\"title\":\"iPhone 6\",\"brand\":\"iphone\",\"id\":1}",
       "2": "{\"description\":\"Samsung Galaxy A6 new launched with 4K display\",\"title\":\"Samsung Galaxy A6\",\"brand\":\"samsung\",\"id\":2}",
-      "3": "{\"description\":\"Advanced IPX7 water resistance, a 13 MP rear camera and a 5 MP front camera, a long-lasting 2470 mAh battery and Android Lollipop. Meet the beautifully crafted Moto G (3rd Gen), the phone that'll always be there for you.\",\"title\":\"Motorola G3\",\"brand\":\"Motorola\",\"tags\":[\"moto g3\",\"motorola g3\"],\"id\":3}"
+      "3": "{\"description\":\"Advanced IPX7 water resistance, a 13 MP rear camera and a 5 MP front camera, a long-lasting 2470 mAh battery and Android Lollipop. Meet the beautifully crafted Moto G (3rd Gen), the phone that'll always be there for you.\",\"title\":\"Motorola G3\",\"brand\":\"motorola\",\"tags\":[\"moto g3\",\"motorola g3\"],\"id\":3}",
+      "4": "{\"description\":\"If you're looking for a budget-friendly Android smartphone with a cool UI that does not compromise on performance, then look no further than the Redmi 2.\",\"title\":\"Redmi MI\",\"brand\":\"redmi mi\",\"tags\":[\"Redmi\",\"MI\",\"Redmi 2\"],\"categoryId\":7,\"id\":4}",
+      "5": "{\"description\":\"The 13 MP PixelMaster camera has a f/2.0-aperture lens for high-resolution photos captured without shutter lag. Industry-leading Low Light mode uses pixel-merging technology to ensure up to 400% brighter photos at night or in low-light. The ultra-fast, laser auto-focus feature greatly reduces blurring and enhances image stabilization.\",\"title\":\"Asus Zenfone 5\",\"brand\":\"asus\",\"tags\":[\"Asus\",\"Zenfone 5\"],\"categoryId\":7,\"id\":5}"
     },
     "Category": {
-      "5": "{\"name\":\"Electronics\",\"categoryId\":0,\"root\":true,\"createdAt\":\"2016-03-02T12:34:33.000Z\",\"updatedAt\":\"2016-03-02T12:34:33.000Z\",\"id\":5}"
+      "5": "{\"name\":\"Electronics\",\"categoryId\":0,\"root\":true,\"createdAt\":\"2016-03-02T12:34:33.000Z\",\"updatedAt\":\"2016-03-02T12:34:33.000Z\",\"id\":5}",
+      "7": "{\"name\":\"Mobiles\",\"createdAt\":\"2016-03-02T12:57:22.559Z\",\"updatedAt\":\"2016-03-02T12:57:22.559Z\",\"categoryId\":5,\"id\":7}",
+      "8": "{\"name\":\"Men's Fashions\",\"createdAt\":\"2016-03-03T09:26:40.356Z\",\"updatedAt\":\"2016-03-03T09:26:40.356Z\",\"categoryId\":0,\"root\":true,\"id\":8}",
+      "9": "{\"name\":\"Clothing\",\"createdAt\":\"2016-03-03T09:29:06.790Z\",\"updatedAt\":\"2016-03-04T08:11:04.510Z\",\"categoryId\":8,\"id\":9}",
+      "10": "{\"name\":\"T-Shirts\",\"createdAt\":\"2016-03-03T09:29:46.894Z\",\"updatedAt\":\"2016-03-03T09:29:46.894Z\",\"categoryId\":9,\"id\":10}",
+      "12": "{\"name\":\"Footwear\",\"createdAt\":\"2016-03-03T09:42:58.950Z\",\"updatedAt\":\"2016-03-03T09:42:58.950Z\",\"categoryId\":8,\"id\":12}",
+      "13": "{\"name\":\"Watches\",\"createdAt\":\"2016-03-03T09:48:36.633Z\",\"updatedAt\":\"2016-03-03T09:48:36.633Z\",\"categoryId\":8,\"id\":13}",
+      "15": "{\"name\":\"Women's Fashions\",\"createdAt\":\"2016-03-03T09:52:07.651Z\",\"updatedAt\":\"2016-03-03T09:52:07.651Z\",\"categoryId\":0,\"root\":true,\"id\":15}",
+      "17": "{\"name\":\"Tablets\",\"createdAt\":\"2016-03-03T09:55:52.929Z\",\"updatedAt\":\"2016-03-03T09:55:52.929Z\",\"categoryId\":5,\"id\":17}",
+      "18": "{\"name\":\"Home & Kitchen\",\"createdAt\":\"2016-03-04T06:26:03.778Z\",\"updatedAt\":\"2016-03-04T06:26:03.778Z\",\"categoryId\":0,\"root\":true,\"id\":18}",
+      "19": "{\"name\":\"Accessories\",\"createdAt\":\"2016-03-04T06:30:18.820Z\",\"updatedAt\":\"2016-03-04T06:30:18.820Z\",\"categoryId\":8,\"id\":19}"
     },
     "Variant": {
       "1": "{\"label\":\"golden\",\"quantity\":10,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":68000,\"published\":true,\"sku\":\"101\",\"productId\":1,\"id\":1}",
@@ -45,10 +58,16 @@
       "5": "{\"label\":\"white\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":32000,\"salePrice\":36000,\"published\":true,\"sku\":\"105\",\"productId\":2,\"id\":5}",
       "6": "{\"label\":\"black\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":32000,\"salePrice\":34000,\"published\":true,\"sku\":\"106\",\"productId\":2,\"id\":6}",
       "7": "{\"quantity\":0,\"specs\":[{\"title\":\"Brand\",\"description\":\"Motorola\"},{\"title\":\"Model Name\",\"description\":\"Moto G (3rd Generation)\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 13 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 5 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G, 2G\"},{\"title\":\"WiFi\",\"description\":\"Yes, 802.11 b/g/n\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P001\",\"image\":\"\",\"label\":\"Black\",\"productId\":3,\"id\":7}",
-      "8": "{\"quantity\":0,\"specs\":[{\"title\":\"Brand\",\"description\":\"Motorola\"},{\"title\":\"Model Name\",\"description\":\"Moto G (3rd Generation)\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 13 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 5 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G, 2G\"},{\"title\":\"WiFi\",\"description\":\"Yes, 802.11 b/g/n\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P002\",\"image\":\"\",\"label\":\"White\",\"productId\":3,\"id\":8}"
+      "8": "{\"quantity\":0,\"specs\":[{\"title\":\"Brand\",\"description\":\"Motorola\"},{\"title\":\"Model Name\",\"description\":\"Moto G (3rd Generation)\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 13 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 5 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G, 2G\"},{\"title\":\"WiFi\",\"description\":\"Yes, 802.11 b/g/n\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P002\",\"image\":\"\",\"label\":\"White\",\"productId\":3,\"id\":8}",
+      "9": "{\"quantity\":0,\"specs\":[{\"title\":\"Model Name\",\"description\":\"Redmi 2 Prime\"},{\"title\":\"Touch Screen\",\"description\":\"Yes\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 8 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 2 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G\"}],\"price\":7999,\"salePrice\":6999,\"published\":true,\"sku\":\"1004\",\"image\":\"\",\"label\":\"Black\",\"productId\":4,\"id\":9}",
+      "10": "{\"quantity\":0,\"specs\":[{\"title\":\"Model Name\",\"description\":\"Redmi 2 Prime\"},{\"title\":\"Touch Screen\",\"description\":\"Yes\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 8 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 2 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G\"}],\"price\":7999,\"salePrice\":6999,\"published\":true,\"sku\":\"1005\",\"image\":\"\",\"label\":\"Grey\",\"productId\":4,\"id\":10}",
+      "11": "{\"quantity\":0,\"specs\":[{\"title\":\"Touch Screen\",\"description\":\"Yes\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 13 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 5 MP\"},{\"title\":\"Video Player\",\"description\":\"Yes\"}],\"price\":10999,\"salePrice\":9999,\"published\":true,\"sku\":\"1006\",\"image\":\"\",\"label\":\"Black\",\"productId\":5,\"id\":11}"
     },
     "Address": {
-      "1": "{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza, M.P Nagar Zone-2\",\"phone\":\"9926724315\",\"instructions\":\"Please deliver it safely\",\"customerId\":1,\"id\":1}"
+      "1": "{\"firstName\":\"Akshay\",\"lastName\":\"Shrivastava\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza, M.P Nagar Zone-II\",\"phone\":\"9926724315\",\"instructions\":\"Please deliver it safely\",\"customerId\":2,\"id\":1}",
+      "2": "{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"H.No 51 LLR Colony, Awadhpuri\",\"phone\":\"8956231452\",\"instructions\":\"Please deliver it safely\",\"customerId\":2,\"id\":2}",
+      "3": "{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"zip\":\"462001\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"H. No - 51 LLR Colony Bagh Dilkusha\",\"phone\":\"9926724315\",\"instructions\":\"Please Handle it with care !\",\"customerId\":3,\"id\":3}",
+      "4": "{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"zip\":\"462001\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza, Zone-II\",\"phone\":\"9926724315\",\"instructions\":\"Please deliver it fast !\",\"customerId\":3,\"id\":4}"
     },
     "Cart": {
       "2": "{\"customerId\":1,\"title\":\"iPhone 6\",\"variant\":\"golden\",\"price\":68000,\"quantity\":2,\"productId\":1,\"id\":2}",
@@ -69,8 +88,9 @@
       "11": "{\"quantity\":2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T12:21:20.643Z\",\"note\":\"product cancelled (returned) with quantity 2\",\"variantId\":1,\"id\":11}"
     },
     "Customer": {
-      "1": "{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"id\":1}",
-      "2": "{\"password\":\"$2a$10$EjufRRvAk/GKZasEoeqYAevSM3nrzFzlMBerG5H/h4rNqqlfiFf/G\",\"email\":\"akshay.shrivastava@eulogik.com\",\"firstName\":\"Akshay\",\"lastName\":\"Shrivastava\",\"id\":2}"
+      "1": "{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"id\":1,\"email\":\"customer@eulogik.com\",\"phone\":\"7778889994\",\"gender\":\"male\",\"createdAt\":\"2016-02-20T12:21:20.643Z\",\"updatedAt\":\"2016-03-04T10:52:33.045Z\"}",
+      "2": "{\"email\":\"akshay.shrivastava@eulogik.com\",\"firstName\":\"Akshay\",\"lastName\":\"Shrivastava\",\"phone\":\"9926724315\",\"createdAt\":\"2016-02-20T12:21:20.643Z\",\"id\":2,\"gender\":\"male\",\"updatedAt\":\"2016-03-04T08:11:18.193Z\"}",
+      "3": "{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"email\":\"sumit.khajanchi@eulogik.com\",\"phone\":\"9926724315\",\"gender\":\"male\",\"id\":3}"
     },
     "Zip": {}
   }
