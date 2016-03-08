@@ -24,7 +24,7 @@
       "comments": "price to customers"
     },
     "published": {
-      "type": "boolean"
+      "type": "string"
     },
     "sku": {
       "type": "string",

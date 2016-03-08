@@ -1,7 +1,7 @@
 {
   "ids": {
     "User": 2,
-    "AccessToken": 14,
+    "AccessToken": 15,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
@@ -13,7 +13,8 @@
     "Order": 5,
     "stockEntry": 12,
     "Customer": 4,
-    "Zip": 1
+    "Zip": 1,
+    "Settings": 2
   },
   "models": {
     "User": {
@@ -25,14 +26,15 @@
       "rBhU0tyc6Px0YGfosdJGoZcsSDKGOGKOErlIzDnQihpNM0oIAKAs8bMlUg2YAtAo": "{\"id\":\"rBhU0tyc6Px0YGfosdJGoZcsSDKGOGKOErlIzDnQihpNM0oIAKAs8bMlUg2YAtAo\",\"ttl\":1209600,\"created\":\"2016-02-23T11:03:38.048Z\",\"userId\":1}",
       "UJAdizGXXDF556fJ9C7GWNe7PY0srink42jlbInP9ulVgWIaoGqZiuuG3nh1cuNa": "{\"id\":\"UJAdizGXXDF556fJ9C7GWNe7PY0srink42jlbInP9ulVgWIaoGqZiuuG3nh1cuNa\",\"ttl\":1209600,\"created\":\"2016-02-25T09:32:11.652Z\",\"userId\":1}",
       "yh6sIXZVfPJopjgruMz5dfY5AADhG4LgqVYWxD3OAEemdsGv9WlchRr4o7GfDNRD": "{\"id\":\"yh6sIXZVfPJopjgruMz5dfY5AADhG4LgqVYWxD3OAEemdsGv9WlchRr4o7GfDNRD\",\"ttl\":1209600,\"created\":\"2016-03-07T07:03:51.059Z\",\"userId\":1}",
-      "IReP1Ipy9nUobaAWBuG5Vtoyjyv2GPm3GwFkpmEKqVyA8FCX0XJeoPRf2Qec4Pb1": "{\"id\":\"IReP1Ipy9nUobaAWBuG5Vtoyjyv2GPm3GwFkpmEKqVyA8FCX0XJeoPRf2Qec4Pb1\",\"ttl\":1209600,\"created\":\"2016-03-07T09:58:12.482Z\",\"userId\":1}"
+      "IReP1Ipy9nUobaAWBuG5Vtoyjyv2GPm3GwFkpmEKqVyA8FCX0XJeoPRf2Qec4Pb1": "{\"id\":\"IReP1Ipy9nUobaAWBuG5Vtoyjyv2GPm3GwFkpmEKqVyA8FCX0XJeoPRf2Qec4Pb1\",\"ttl\":1209600,\"created\":\"2016-03-07T09:58:12.482Z\",\"userId\":1}",
+      "F9z1a8aYkUvJM1s8h2BNv8u55YRvoDZjXangzXol6GSo4zq3H5yhwCAV3TMwBDgv": "{\"id\":\"F9z1a8aYkUvJM1s8h2BNv8u55YRvoDZjXangzXol6GSo4zq3H5yhwCAV3TMwBDgv\",\"ttl\":1209600,\"created\":\"2016-03-08T04:26:53.134Z\",\"userId\":1}"
     },
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
     "Product": {
-      "1": "{\"description\":\"iPhone 6 is an designed by Apple iPhone Company based on U.S \",\"title\":\"iPhone 6\",\"brand\":\"iphone\",\"id\":1}",
-      "2": "{\"description\":\"Samsung Galaxy A6 new launched with 4K display\",\"title\":\"Samsung Galaxy A6\",\"brand\":\"samsung\",\"id\":2}",
+      "1": "{\"description\":\"iPhone 6 is an designed by Apple iPhone Company based on U.S \",\"title\":\"iPhone 6\",\"brand\":\"iphone\",\"tags\":[\"iphone\",\"iphone 6\"],\"id\":1,\"categoryId\":7}",
+      "2": "{\"description\":\"Samsung Galaxy A6 new launched with 4K display\",\"title\":\"Samsung Galaxy A6\",\"brand\":\"samsung\",\"tags\":[],\"id\":2}",
       "3": "{\"description\":\"Advanced IPX7 water resistance, a 13 MP rear camera and a 5 MP front camera, a long-lasting 2470 mAh battery and Android Lollipop. Meet the beautifully crafted Moto G (3rd Gen), the phone that'll always be there for you.\",\"title\":\"Motorola G3\",\"brand\":\"motorola\",\"tags\":[\"moto g3\",\"motorola g3\"],\"id\":3}",
       "4": "{\"description\":\"If you're looking for a budget-friendly Android smartphone with a cool UI that does not compromise on performance, then look no further than the Redmi 2.\",\"title\":\"Redmi MI\",\"brand\":\"redmi mi\",\"tags\":[\"Redmi\",\"MI\",\"Redmi 2\"],\"categoryId\":7,\"id\":4}",
       "5": "{\"description\":\"The 13 MP PixelMaster camera has a f/2.0-aperture lens for high-resolution photos captured without shutter lag. Industry-leading Low Light mode uses pixel-merging technology to ensure up to 400% brighter photos at night or in low-light. The ultra-fast, laser auto-focus feature greatly reduces blurring and enhances image stabilization.\",\"title\":\"Asus Zenfone 5\",\"brand\":\"asus\",\"tags\":[\"Asus\",\"Zenfone 5\"],\"categoryId\":7,\"id\":5}"
@@ -51,12 +53,12 @@
       "19": "{\"name\":\"Accessories\",\"createdAt\":\"2016-03-04T06:30:18.820Z\",\"updatedAt\":\"2016-03-04T06:30:18.820Z\",\"categoryId\":8,\"id\":19}"
     },
     "Variant": {
-      "1": "{\"label\":\"golden\",\"quantity\":10,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":68000,\"published\":true,\"sku\":\"101\",\"productId\":1,\"id\":1}",
-      "2": "{\"label\":\"black\",\"quantity\":0,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":65000,\"published\":true,\"sku\":\"102\",\"productId\":1,\"id\":2}",
-      "3": "{\"label\":\"white\",\"quantity\":0,\"specs\":[{\"display\":\"5.5\",\"processor\":\"A8\",\"battery\":\"3000mah\",\"band\":\"2G/3G/4G\",\"rearCamera\":\"8MP\",\"frontCamera\":\"2MP\",\"memory\":\"32GB\"}],\"price\":62000,\"salePrice\":62000,\"published\":true,\"sku\":\"103\",\"productId\":1,\"id\":3}",
-      "4": "{\"label\":\"golden\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":35000,\"salePrice\":39000,\"published\":true,\"sku\":\"104\",\"productId\":2,\"id\":4}",
-      "5": "{\"label\":\"white\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":32000,\"salePrice\":36000,\"published\":true,\"sku\":\"105\",\"productId\":2,\"id\":5}",
-      "6": "{\"label\":\"black\",\"quantity\":0,\"specs\":[{\"network\":\"2G/3G/4G\",\"processor\":\"1.6GHz QuadCore\",\"frontCamera\":\"5MP\",\"rearCamera\":\"21MP\",\"battery\":\"3500mah\"}],\"price\":32000,\"salePrice\":34000,\"published\":true,\"sku\":\"106\",\"productId\":2,\"id\":6}",
+      "1": "{\"label\":\"golden\",\"quantity\":10,\"specs\":[{\"title\":\"Touch Screen\",\"description\":\"Yes\"}],\"price\":68000,\"salePrice\":65000,\"published\":\"Yes\",\"sku\":\"101\",\"productId\":1,\"id\":1}",
+      "2": "{\"label\":\"black\",\"quantity\":0,\"specs\":[{\"title\":\"Touch Screen\",\"description\":\"Yes\"}],\"price\":65000,\"salePrice\":62000,\"published\":\"Yes\",\"sku\":\"102\",\"productId\":1,\"id\":2}",
+      "3": "{\"label\":\"white\",\"quantity\":0,\"specs\":[{\"title\":\"Touch Screen\",\"description\":\"Yes\"}],\"price\":62000,\"salePrice\":58000,\"published\":\"Yes\",\"sku\":\"103\",\"productId\":1,\"id\":3}",
+      "4": "{\"label\":\"golden\",\"quantity\":0,\"specs\":[],\"price\":35000,\"salePrice\":39000,\"published\":true,\"sku\":\"104\",\"productId\":2,\"id\":4}",
+      "5": "{\"label\":\"white\",\"quantity\":0,\"specs\":[],\"price\":32000,\"salePrice\":36000,\"published\":true,\"sku\":\"105\",\"productId\":2,\"id\":5}",
+      "6": "{\"label\":\"black\",\"quantity\":0,\"specs\":[],\"price\":32000,\"salePrice\":34000,\"published\":true,\"sku\":\"106\",\"productId\":2,\"id\":6}",
       "7": "{\"quantity\":0,\"specs\":[{\"title\":\"Brand\",\"description\":\"Motorola\"},{\"title\":\"Model Name\",\"description\":\"Moto G (3rd Generation)\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 13 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 5 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G, 2G\"},{\"title\":\"WiFi\",\"description\":\"Yes, 802.11 b/g/n\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P001\",\"image\":\"\",\"label\":\"Black\",\"productId\":3,\"id\":7}",
       "8": "{\"quantity\":0,\"specs\":[{\"title\":\"Brand\",\"description\":\"Motorola\"},{\"title\":\"Model Name\",\"description\":\"Moto G (3rd Generation)\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 13 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 5 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G, 2G\"},{\"title\":\"WiFi\",\"description\":\"Yes, 802.11 b/g/n\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P002\",\"image\":\"\",\"label\":\"White\",\"productId\":3,\"id\":8}",
       "9": "{\"quantity\":0,\"specs\":[{\"title\":\"Model Name\",\"description\":\"Redmi 2 Prime\"},{\"title\":\"Touch Screen\",\"description\":\"Yes\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 8 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 2 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G\"}],\"price\":7999,\"salePrice\":6999,\"published\":true,\"sku\":\"1004\",\"image\":\"\",\"label\":\"Black\",\"productId\":4,\"id\":9}",
@@ -92,6 +94,9 @@
       "2": "{\"email\":\"akshay.shrivastava@eulogik.com\",\"firstName\":\"Akshay\",\"lastName\":\"Shrivastava\",\"phone\":\"9926724315\",\"createdAt\":\"2016-02-20T12:21:20.643Z\",\"id\":2,\"gender\":\"male\",\"updatedAt\":\"2016-03-04T08:11:18.193Z\"}",
       "3": "{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"email\":\"sumit.khajanchi@eulogik.com\",\"phone\":\"9926724315\",\"gender\":\"male\",\"id\":3}"
     },
-    "Zip": {}
+    "Zip": {},
+    "Settings": {
+      "1": "{\"name\":\"Shop SQR\",\"address\":\"27, Noble Plaza Zone - II\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"phone\":9926724315,\"currency\":\"₹ Indian Rupees\",\"timezone\":\"+5:30 Kolkata/New Delhi\",\"emailAccount\":{\"email\":\"shopsqr@eulogik.com\",\"password\":\"shopsqr\"},\"pincode\":\"462011\",\"id\":1}"
+    }
   }
 }
