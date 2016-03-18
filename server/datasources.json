@@ -25,5 +25,9 @@
     "connector": "loopback-component-storage",
     "provider": "filesystem",
     "root": "./uploads"
+  },
+  "db-pro": {
+    "name": "db-pro",
+    "connector": "mongodb"
   }
 }
