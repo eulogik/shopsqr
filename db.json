@@ -1,20 +1,21 @@
 {
   "ids": {
     "User": 2,
-    "AccessToken": 15,
+    "AccessToken": 45,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
     "Product": 6,
     "Category": 20,
     "Variant": 12,
-    "Address": 5,
+    "Address": 6,
     "Cart": 4,
-    "Order": 5,
-    "stockEntry": 12,
-    "Customer": 4,
+    "Order": 16,
+    "stockEntry": 34,
+    "Customer": 5,
     "Zip": 1,
-    "Settings": 2
+    "Settings": 2,
+    "CategoryProduct": 12
   },
   "models": {
     "User": {
@@ -27,20 +28,46 @@
       "UJAdizGXXDF556fJ9C7GWNe7PY0srink42jlbInP9ulVgWIaoGqZiuuG3nh1cuNa": "{\"id\":\"UJAdizGXXDF556fJ9C7GWNe7PY0srink42jlbInP9ulVgWIaoGqZiuuG3nh1cuNa\",\"ttl\":1209600,\"created\":\"2016-02-25T09:32:11.652Z\",\"userId\":1}",
       "yh6sIXZVfPJopjgruMz5dfY5AADhG4LgqVYWxD3OAEemdsGv9WlchRr4o7GfDNRD": "{\"id\":\"yh6sIXZVfPJopjgruMz5dfY5AADhG4LgqVYWxD3OAEemdsGv9WlchRr4o7GfDNRD\",\"ttl\":1209600,\"created\":\"2016-03-07T07:03:51.059Z\",\"userId\":1}",
       "IReP1Ipy9nUobaAWBuG5Vtoyjyv2GPm3GwFkpmEKqVyA8FCX0XJeoPRf2Qec4Pb1": "{\"id\":\"IReP1Ipy9nUobaAWBuG5Vtoyjyv2GPm3GwFkpmEKqVyA8FCX0XJeoPRf2Qec4Pb1\",\"ttl\":1209600,\"created\":\"2016-03-07T09:58:12.482Z\",\"userId\":1}",
-      "F9z1a8aYkUvJM1s8h2BNv8u55YRvoDZjXangzXol6GSo4zq3H5yhwCAV3TMwBDgv": "{\"id\":\"F9z1a8aYkUvJM1s8h2BNv8u55YRvoDZjXangzXol6GSo4zq3H5yhwCAV3TMwBDgv\",\"ttl\":1209600,\"created\":\"2016-03-08T04:26:53.134Z\",\"userId\":1}"
+      "F9z1a8aYkUvJM1s8h2BNv8u55YRvoDZjXangzXol6GSo4zq3H5yhwCAV3TMwBDgv": "{\"id\":\"F9z1a8aYkUvJM1s8h2BNv8u55YRvoDZjXangzXol6GSo4zq3H5yhwCAV3TMwBDgv\",\"ttl\":1209600,\"created\":\"2016-03-08T04:26:53.134Z\",\"userId\":1}",
+      "aV6SaVAWcEsmUYwUTvohVtA4r73LfOxvlucxZiuHoFggVIXr22imf35UqEtsworn": "{\"id\":\"aV6SaVAWcEsmUYwUTvohVtA4r73LfOxvlucxZiuHoFggVIXr22imf35UqEtsworn\",\"ttl\":1209600,\"created\":\"2016-03-18T05:16:02.236Z\",\"userId\":1}",
+      "XtQMhTBauIWnadb5FZW68pOVjWPmXkZh9dbK3Yu8N1jYTdYKaX9GcDR0RbWQ2V70": "{\"id\":\"XtQMhTBauIWnadb5FZW68pOVjWPmXkZh9dbK3Yu8N1jYTdYKaX9GcDR0RbWQ2V70\",\"ttl\":1209600,\"created\":\"2016-05-03T06:15:32.815Z\",\"userId\":1}",
+      "NjoNG7tOuYqQooNrxN3K4VP0qXq1nhILufxxFi1cqefp5ITBs66xJEIY6I0GJobj": "{\"id\":\"NjoNG7tOuYqQooNrxN3K4VP0qXq1nhILufxxFi1cqefp5ITBs66xJEIY6I0GJobj\",\"ttl\":1209600,\"created\":\"2016-05-03T09:23:11.306Z\",\"userId\":1}",
+      "jZPC3MIW2MebsgFTqom4ybU6YPjr6RMYQJxnEw66LrAzDZ0v732D2V3idcMNtCVx": "{\"id\":\"jZPC3MIW2MebsgFTqom4ybU6YPjr6RMYQJxnEw66LrAzDZ0v732D2V3idcMNtCVx\",\"ttl\":1209600,\"created\":\"2016-05-03T09:28:12.722Z\",\"userId\":1}",
+      "EFwNoHsY6Jz8QFC0YTSpuour3UxLh8XL0cyV5VWu7rNcy1nVRpCeLyM1hRXRWA9e": "{\"id\":\"EFwNoHsY6Jz8QFC0YTSpuour3UxLh8XL0cyV5VWu7rNcy1nVRpCeLyM1hRXRWA9e\",\"ttl\":1209600,\"created\":\"2016-05-03T09:44:19.724Z\",\"userId\":1}",
+      "bpxhvrPZNi0WCGUy83r08oDY9rMKGyGAwxZKPAGJBwKGtch8h9PLDsCg4FWIwSGq": "{\"id\":\"bpxhvrPZNi0WCGUy83r08oDY9rMKGyGAwxZKPAGJBwKGtch8h9PLDsCg4FWIwSGq\",\"ttl\":1209600,\"created\":\"2016-05-06T12:23:45.126Z\",\"userId\":1}",
+      "OD9uBfyklpAOnObOdpGL0IgANx5NONiZV3kLmLe3dKx2JjkuQPbeePflNAVauqIe": "{\"id\":\"OD9uBfyklpAOnObOdpGL0IgANx5NONiZV3kLmLe3dKx2JjkuQPbeePflNAVauqIe\",\"ttl\":1209600,\"created\":\"2016-05-10T07:05:14.299Z\",\"userId\":1}",
+      "B2UG5IEZCPicMFnSy5GSHfxM6xpZP7aoKrSNdnHqIiSsI1zvybG2DtFFSrndLB8D": "{\"id\":\"B2UG5IEZCPicMFnSy5GSHfxM6xpZP7aoKrSNdnHqIiSsI1zvybG2DtFFSrndLB8D\",\"ttl\":1209600,\"created\":\"2016-05-10T07:10:46.589Z\",\"userId\":1}",
+      "y8QhyQsiNvlUxfS5xgH9yfCptDkeyIDJT2Rv3QAofwtRDa0EcDxDenUtbBkR7mWC": "{\"id\":\"y8QhyQsiNvlUxfS5xgH9yfCptDkeyIDJT2Rv3QAofwtRDa0EcDxDenUtbBkR7mWC\",\"ttl\":1209600,\"created\":\"2016-05-10T07:12:01.817Z\",\"userId\":1}",
+      "ebveQ7lp2hAL8fWOZawspgfRqBATtdIjVxRxvpep2QguRGchaSBh3lBB2CNbQMyr": "{\"id\":\"ebveQ7lp2hAL8fWOZawspgfRqBATtdIjVxRxvpep2QguRGchaSBh3lBB2CNbQMyr\",\"ttl\":1209600,\"created\":\"2016-05-10T07:19:18.430Z\",\"userId\":1}",
+      "fHQrEDcPFOwog3DGiU2TwO4fV9qWm9Dq6gjS169FHibBJDMk2N7SuteMR11g0bCf": "{\"id\":\"fHQrEDcPFOwog3DGiU2TwO4fV9qWm9Dq6gjS169FHibBJDMk2N7SuteMR11g0bCf\",\"ttl\":1209600,\"created\":\"2016-07-25T04:46:18.137Z\",\"userId\":1}",
+      "AH3EKJJvmRKrHezt8MzESTGZS88rB68aIm7ceLjxXyY1YvMy7jVFEiCXVDYoIFC3": "{\"id\":\"AH3EKJJvmRKrHezt8MzESTGZS88rB68aIm7ceLjxXyY1YvMy7jVFEiCXVDYoIFC3\",\"ttl\":1209600,\"created\":\"2016-07-26T07:18:32.578Z\",\"userId\":1}",
+      "r3nvMjRYDIwK5yj5r7rrb8LjZ0tPtB31eSTShAELBu8wlsrkg54iZnBXuHjTi7U1": "{\"id\":\"r3nvMjRYDIwK5yj5r7rrb8LjZ0tPtB31eSTShAELBu8wlsrkg54iZnBXuHjTi7U1\",\"ttl\":1209600,\"created\":\"2016-07-26T07:27:29.841Z\",\"userId\":1}",
+      "IMDiCHF2WByFhHYCdojD6lG2PmZJEqebGFu6KHnX61NCahvm5iCfZlSTunpMauJn": "{\"id\":\"IMDiCHF2WByFhHYCdojD6lG2PmZJEqebGFu6KHnX61NCahvm5iCfZlSTunpMauJn\",\"ttl\":1209600,\"created\":\"2016-07-26T09:07:55.257Z\",\"userId\":1}",
+      "oTJHCaG9AfEjeuGV39verMqX9jZGxa8O3G6PCrX9EeewXGjGHMYDwAA0ezjCJPNU": "{\"id\":\"oTJHCaG9AfEjeuGV39verMqX9jZGxa8O3G6PCrX9EeewXGjGHMYDwAA0ezjCJPNU\",\"ttl\":1209600,\"created\":\"2016-07-26T09:57:20.719Z\",\"userId\":1}",
+      "4FND5LA7CWkuiLgPGjCeRIDLhvvfwmQBccgnqB6X0RfLwcOGpPf0xMEiySpAMftf": "{\"id\":\"4FND5LA7CWkuiLgPGjCeRIDLhvvfwmQBccgnqB6X0RfLwcOGpPf0xMEiySpAMftf\",\"ttl\":1209600,\"created\":\"2016-07-27T09:50:28.071Z\",\"userId\":1}",
+      "fkqfFU66DlyaDEHYvnMl3ZFSEzCl7uXJkBxnlqN4m3cnxD0fz2YFMXMrBUeeFdhZ": "{\"id\":\"fkqfFU66DlyaDEHYvnMl3ZFSEzCl7uXJkBxnlqN4m3cnxD0fz2YFMXMrBUeeFdhZ\",\"ttl\":1209600,\"created\":\"2016-07-28T04:31:43.747Z\",\"userId\":1}",
+      "HEwlI87ixNOgoGFWUrMqterLkm8vAVP5KIkoZWM2Og4x5WFmCw720tSA25RlYM4i": "{\"id\":\"HEwlI87ixNOgoGFWUrMqterLkm8vAVP5KIkoZWM2Og4x5WFmCw720tSA25RlYM4i\",\"ttl\":1209600,\"created\":\"2016-07-28T12:26:51.639Z\",\"userId\":1}",
+      "dEDKFtviErr9gNcWqAxhCZP4ss3I0Sc7IG2CS03kioBjTNSbkRPTAJESgVFUyuId": "{\"id\":\"dEDKFtviErr9gNcWqAxhCZP4ss3I0Sc7IG2CS03kioBjTNSbkRPTAJESgVFUyuId\",\"ttl\":1209600,\"created\":\"2016-07-29T04:20:45.121Z\",\"userId\":1}",
+      "Mqp3C483g8PqHJnJ0aAnRilB2ysuoRhaIyCp7FaQBi5khHkKmvpIXyl6JtMjOjWG": "{\"id\":\"Mqp3C483g8PqHJnJ0aAnRilB2ysuoRhaIyCp7FaQBi5khHkKmvpIXyl6JtMjOjWG\",\"ttl\":1209600,\"created\":\"2016-07-29T13:30:20.719Z\",\"userId\":1}",
+      "ONlZO7vVd4Sr88wQW84lHu7sQKCw0As6BBrFJezgJgOD6ETmGVFaxjUGdrFzm8c3": "{\"id\":\"ONlZO7vVd4Sr88wQW84lHu7sQKCw0As6BBrFJezgJgOD6ETmGVFaxjUGdrFzm8c3\",\"ttl\":1209600,\"created\":\"2016-07-30T09:51:15.470Z\",\"userId\":1}",
+      "dM6NCMFQazFAUveK3lGt1IMfN0XtDNZSefHAUuvXD5pMV5yru8kPJLKdF6jWSfqf": "{\"id\":\"dM6NCMFQazFAUveK3lGt1IMfN0XtDNZSefHAUuvXD5pMV5yru8kPJLKdF6jWSfqf\",\"ttl\":1209600,\"created\":\"2016-08-01T11:40:07.064Z\",\"userId\":1}",
+      "xcUAXr9oYqjJa2YfHuDSvg3feIM0oBIFX1zBHOgjDl7PhjvqFkIUeSj544jC2vvD": "{\"id\":\"xcUAXr9oYqjJa2YfHuDSvg3feIM0oBIFX1zBHOgjDl7PhjvqFkIUeSj544jC2vvD\",\"ttl\":1209600,\"created\":\"2016-08-02T04:28:23.926Z\",\"userId\":1}",
+      "hNVCfaGVYSOZ44jeGNuOXgCnR6yBuVaEiVMxNX6IyyZZ1UV8DHIWpjFZgJ7rhdcD": "{\"id\":\"hNVCfaGVYSOZ44jeGNuOXgCnR6yBuVaEiVMxNX6IyyZZ1UV8DHIWpjFZgJ7rhdcD\",\"ttl\":1209600,\"created\":\"2016-08-02T07:30:42.724Z\",\"userId\":1}",
+      "Jku1scLEnA3a4VGHQXnGw3VfUo916CBMDlYn0ECxbi5QdVXtQ5PcoFhdFkv4GB9W": "{\"id\":\"Jku1scLEnA3a4VGHQXnGw3VfUo916CBMDlYn0ECxbi5QdVXtQ5PcoFhdFkv4GB9W\",\"ttl\":1209600,\"created\":\"2016-08-02T08:49:06.378Z\",\"userId\":1}",
+      "GgR8238CscZO0LySVkAm4R2Yldkxjw0g8cT8M5hnArUXLJGqASQgCKJd7nUri6mp": "{\"id\":\"GgR8238CscZO0LySVkAm4R2Yldkxjw0g8cT8M5hnArUXLJGqASQgCKJd7nUri6mp\",\"ttl\":1209600,\"created\":\"2016-08-02T11:05:42.885Z\",\"userId\":1}"
     },
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
     "Product": {
       "1": "{\"description\":\"iPhone 6 is an designed by Apple iPhone Company based on U.S \",\"title\":\"iPhone 6\",\"brand\":\"iphone\",\"tags\":[\"iphone\",\"iphone 6\"],\"id\":1,\"categoryId\":7}",
-      "2": "{\"description\":\"Samsung Galaxy A6 new launched with 4K display\",\"title\":\"Samsung Galaxy A6\",\"brand\":\"samsung\",\"tags\":[],\"id\":2}",
-      "3": "{\"description\":\"Advanced IPX7 water resistance, a 13 MP rear camera and a 5 MP front camera, a long-lasting 2470 mAh battery and Android Lollipop. Meet the beautifully crafted Moto G (3rd Gen), the phone that'll always be there for you.\",\"title\":\"Motorola G3\",\"brand\":\"motorola\",\"tags\":[\"moto g3\",\"motorola g3\"],\"id\":3}",
+      "2": "{\"description\":\"Samsung Galaxy A6 new launched with 4K display\",\"title\":\"Samsung Galaxy A6\",\"brand\":\"samsung\",\"tags\":[\"samsung\"],\"id\":2,\"categoryId\":7}",
+      "3": "{\"description\":\"Advanced IPX7 water resistance, a 13 MP rear camera and a 5 MP front camera, a long-lasting 2470 mAh battery and Android Lollipop. Meet the beautifully crafted Moto G (3rd Gen), the phone that'll always be there for you.\",\"title\":\"Motorola G3\",\"brand\":\"motorola\",\"tags\":[\"moto g3\",\"motorola g3\"],\"id\":3,\"categoryId\":7}",
       "4": "{\"description\":\"If you're looking for a budget-friendly Android smartphone with a cool UI that does not compromise on performance, then look no further than the Redmi 2.\",\"title\":\"Redmi MI\",\"brand\":\"redmi mi\",\"tags\":[\"Redmi\",\"MI\",\"Redmi 2\"],\"categoryId\":7,\"id\":4}",
       "5": "{\"description\":\"The 13 MP PixelMaster camera has a f/2.0-aperture lens for high-resolution photos captured without shutter lag. Industry-leading Low Light mode uses pixel-merging technology to ensure up to 400% brighter photos at night or in low-light. The ultra-fast, laser auto-focus feature greatly reduces blurring and enhances image stabilization.\",\"title\":\"Asus Zenfone 5\",\"brand\":\"asus\",\"tags\":[\"Asus\",\"Zenfone 5\"],\"categoryId\":7,\"id\":5}"
     },
     "Category": {
-      "5": "{\"name\":\"Electronics\",\"categoryId\":0,\"root\":true,\"createdAt\":\"2016-03-02T12:34:33.000Z\",\"updatedAt\":\"2016-03-02T12:34:33.000Z\",\"id\":5}",
+      "5": "{\"name\":\"Electronics\",\"categoryId\":0,\"root\":true,\"createdAt\":\"2016-03-02T12:34:33.000Z\",\"updatedAt\":\"2016-07-27T10:53:21.107Z\",\"id\":5}",
       "7": "{\"name\":\"Mobiles\",\"createdAt\":\"2016-03-02T12:57:22.559Z\",\"updatedAt\":\"2016-03-02T12:57:22.559Z\",\"categoryId\":5,\"id\":7}",
       "8": "{\"name\":\"Men's Fashions\",\"createdAt\":\"2016-03-03T09:26:40.356Z\",\"updatedAt\":\"2016-03-03T09:26:40.356Z\",\"categoryId\":0,\"root\":true,\"id\":8}",
       "9": "{\"name\":\"Clothing\",\"createdAt\":\"2016-03-03T09:29:06.790Z\",\"updatedAt\":\"2016-03-04T08:11:04.510Z\",\"categoryId\":8,\"id\":9}",
@@ -53,15 +80,15 @@
       "19": "{\"name\":\"Accessories\",\"createdAt\":\"2016-03-04T06:30:18.820Z\",\"updatedAt\":\"2016-03-04T06:30:18.820Z\",\"categoryId\":8,\"id\":19}"
     },
     "Variant": {
-      "1": "{\"label\":\"golden\",\"quantity\":10,\"specs\":[{\"title\":\"Touch Screen\",\"description\":\"Yes\"}],\"price\":68000,\"salePrice\":65000,\"published\":\"Yes\",\"sku\":\"101\",\"productId\":1,\"id\":1}",
-      "2": "{\"label\":\"black\",\"quantity\":0,\"specs\":[{\"title\":\"Touch Screen\",\"description\":\"Yes\"}],\"price\":65000,\"salePrice\":62000,\"published\":\"Yes\",\"sku\":\"102\",\"productId\":1,\"id\":2}",
+      "1": "{\"label\":\"golden\",\"quantity\":1,\"specs\":[{\"title\":\"Touch Screen\",\"description\":\"Yes\"},{\"title\":\"Memory\",\"description\":\"128gb\"}],\"price\":68000,\"salePrice\":65000,\"published\":\"Yes\",\"sku\":\"101\",\"productId\":1,\"id\":1}",
+      "2": "{\"label\":\"black\",\"quantity\":8,\"specs\":[{\"title\":\"Touch Screen\",\"description\":\"Yes\"}],\"price\":65000,\"salePrice\":62000,\"published\":\"Yes\",\"sku\":\"102\",\"productId\":1,\"id\":2}",
       "3": "{\"label\":\"white\",\"quantity\":0,\"specs\":[{\"title\":\"Touch Screen\",\"description\":\"Yes\"}],\"price\":62000,\"salePrice\":58000,\"published\":\"Yes\",\"sku\":\"103\",\"productId\":1,\"id\":3}",
       "4": "{\"label\":\"golden\",\"quantity\":0,\"specs\":[],\"price\":35000,\"salePrice\":39000,\"published\":true,\"sku\":\"104\",\"productId\":2,\"id\":4}",
       "5": "{\"label\":\"white\",\"quantity\":0,\"specs\":[],\"price\":32000,\"salePrice\":36000,\"published\":true,\"sku\":\"105\",\"productId\":2,\"id\":5}",
       "6": "{\"label\":\"black\",\"quantity\":0,\"specs\":[],\"price\":32000,\"salePrice\":34000,\"published\":true,\"sku\":\"106\",\"productId\":2,\"id\":6}",
-      "7": "{\"quantity\":0,\"specs\":[{\"title\":\"Brand\",\"description\":\"Motorola\"},{\"title\":\"Model Name\",\"description\":\"Moto G (3rd Generation)\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 13 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 5 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G, 2G\"},{\"title\":\"WiFi\",\"description\":\"Yes, 802.11 b/g/n\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P001\",\"image\":\"\",\"label\":\"Black\",\"productId\":3,\"id\":7}",
+      "7": "{\"quantity\":4,\"specs\":[{\"title\":\"Brand\",\"description\":\"Motorola\"},{\"title\":\"Model Name\",\"description\":\"Moto G (3rd Generation)\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 13 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 5 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G, 2G\"},{\"title\":\"WiFi\",\"description\":\"Yes, 802.11 b/g/n\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P001\",\"image\":\"\",\"label\":\"Black\",\"productId\":3,\"id\":7}",
       "8": "{\"quantity\":0,\"specs\":[{\"title\":\"Brand\",\"description\":\"Motorola\"},{\"title\":\"Model Name\",\"description\":\"Moto G (3rd Generation)\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 13 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 5 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G, 2G\"},{\"title\":\"WiFi\",\"description\":\"Yes, 802.11 b/g/n\"},{\"title\":\"Display\",\"description\":\"5 Inch\"}],\"price\":14999,\"salePrice\":12999,\"published\":true,\"sku\":\"P002\",\"image\":\"\",\"label\":\"White\",\"productId\":3,\"id\":8}",
-      "9": "{\"quantity\":0,\"specs\":[{\"title\":\"Model Name\",\"description\":\"Redmi 2 Prime\"},{\"title\":\"Touch Screen\",\"description\":\"Yes\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 8 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 2 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G\"}],\"price\":7999,\"salePrice\":6999,\"published\":true,\"sku\":\"1004\",\"image\":\"\",\"label\":\"Black\",\"productId\":4,\"id\":9}",
+      "9": "{\"quantity\":5,\"specs\":[{\"title\":\"Model Name\",\"description\":\"Redmi 2 Prime\"},{\"title\":\"Touch Screen\",\"description\":\"Yes\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 8 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 2 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G\"}],\"price\":7999,\"salePrice\":6999,\"published\":true,\"sku\":\"1004\",\"image\":\"\",\"label\":\"Black\",\"productId\":4,\"id\":9}",
       "10": "{\"quantity\":0,\"specs\":[{\"title\":\"Model Name\",\"description\":\"Redmi 2 Prime\"},{\"title\":\"Touch Screen\",\"description\":\"Yes\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 8 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 2 MP\"},{\"title\":\"Network Type\",\"description\":\"4G, 3G\"}],\"price\":7999,\"salePrice\":6999,\"published\":true,\"sku\":\"1005\",\"image\":\"\",\"label\":\"Grey\",\"productId\":4,\"id\":10}",
       "11": "{\"quantity\":0,\"specs\":[{\"title\":\"Touch Screen\",\"description\":\"Yes\"},{\"title\":\"Rear Camera\",\"description\":\"Yes, 13 MP\"},{\"title\":\"Front Facing Camera\",\"description\":\"Yes, 5 MP\"},{\"title\":\"Video Player\",\"description\":\"Yes\"}],\"price\":10999,\"salePrice\":9999,\"published\":true,\"sku\":\"1006\",\"image\":\"\",\"label\":\"Black\",\"productId\":5,\"id\":11}"
     },
@@ -69,14 +96,23 @@
       "1": "{\"firstName\":\"Akshay\",\"lastName\":\"Shrivastava\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza, M.P Nagar Zone-II\",\"phone\":\"9926724315\",\"instructions\":\"Please deliver it safely\",\"customerId\":2,\"id\":1}",
       "2": "{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"H.No 51 LLR Colony, Awadhpuri\",\"phone\":\"8956231452\",\"instructions\":\"Please deliver it safely\",\"customerId\":2,\"id\":2}",
       "3": "{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"zip\":\"462001\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"H. No - 51 LLR Colony Bagh Dilkusha\",\"phone\":\"9926724315\",\"instructions\":\"Please Handle it with care !\",\"customerId\":3,\"id\":3}",
-      "4": "{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"zip\":\"462001\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza, Zone-II\",\"phone\":\"9926724315\",\"instructions\":\"Please deliver it fast !\",\"customerId\":3,\"id\":4}"
+      "4": "{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"zip\":\"462001\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza, Zone-II\",\"phone\":\"9926724315\",\"instructions\":\"Please deliver it fast !\",\"customerId\":3,\"id\":4}",
+      "5": "{\"firstName\":\"Sunil\",\"lastName\":\"Bamre\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"H-No 31 Awadhpuri\",\"phone\":\"9898989890\",\"instructions\":\"Please deliver it on time.\",\"customerId\":4,\"id\":5}"
     },
     "Cart": {
       "2": "{\"customerId\":1,\"title\":\"iPhone 6\",\"variant\":\"golden\",\"price\":68000,\"quantity\":2,\"productId\":1,\"id\":2}",
       "3": "{\"customerId\":1,\"title\":\"Samsung Galaxy A6\",\"variant\":\"white\",\"price\":36000,\"quantity\":3,\"productId\":2,\"id\":3}"
     },
     "Order": {
-      "3": "{\"cart\":[{\"customerId\":1,\"variantId\":1,\"productId\":1,\"productTitle\":\"iPhone 6\",\"price\":62000,\"salesPrice\":68000,\"quantity\":2}],\"address\":{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza\",\"phone\":\"9926724315\",\"instructions\":\"please deliver   it carefully\",\"id\":1,\"customerId\":1},\"shipping\":{\"method\":\"Red Cart Courier\"},\"payment\":{\"method\":\"COD\"},\"status\":\"pending\",\"id\":3,\"customerId\":1,\"createdAt\":\"2016-02-20T00:00:00.000Z\",\"updatedAt\":\"2016-02-22T00:00:00.000Z\",\"customer\":{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"id\":1}}"
+      "7": "{\"cart\":[{\"productId\":1,\"variantId\":1,\"title\":\"iPhone 6\",\"variant\":\"golden\",\"price\":68000,\"salePrice\":65000,\"quantity\":1}],\"billing\":{},\"shipping\":{\"firstName\":\"Akshay\",\"lastName\":\"Shrivastava\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza, M.P Nagar Zone-II\",\"phone\":\"9926724315\",\"instructions\":\"Please deliver it safely\",\"id\":1,\"customerId\":2},\"payment\":{},\"status\":\"pending\",\"customerId\":2,\"createdAt\":\"2016-07-25T12:14:19.869Z\",\"customer\":{\"firstName\":\"Akshay\",\"lastName\":\"Shrivastava\",\"email\":\"akshay.shrivastava@eulogik.com\",\"phone\":\"9926724315\",\"id\":2},\"id\":7}",
+      "8": "{\"cart\":[{\"productId\":1,\"variantId\":1,\"title\":\"iPhone 6\",\"variant\":\"golden\",\"price\":68000,\"salePrice\":65000,\"quantity\":3},{\"productId\":1,\"variantId\":2,\"title\":\"iPhone 6\",\"variant\":\"black\",\"price\":65000,\"salePrice\":62000,\"quantity\":4}],\"billing\":{},\"shipping\":{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"zip\":\"462001\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"H. No - 51 LLR Colony Bagh Dilkusha\",\"phone\":\"9926724315\",\"instructions\":\"Please Handle it with care !\",\"id\":3,\"customerId\":3},\"payment\":{},\"status\":\"pending\",\"customerId\":3,\"createdAt\":\"2016-07-26T10:05:32.185Z\",\"customer\":{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"email\":\"sumit.khajanchi@eulogik.com\",\"phone\":\"9926724315\",\"id\":3},\"id\":8}",
+      "9": "{\"cart\":[{\"productId\":1,\"variantId\":1,\"title\":\"iPhone 6\",\"variant\":\"golden\",\"price\":68000,\"salePrice\":65000,\"quantity\":1},{\"productId\":3,\"variantId\":7,\"title\":\"Motorola G3\",\"variant\":\"Black\",\"price\":14999,\"salePrice\":12999,\"quantity\":1}],\"billing\":{},\"shipping\":{\"firstName\":\"Akshay\",\"lastName\":\"Shrivastava\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"27 Noble Plaza, M.P Nagar Zone-II\",\"phone\":\"9926724315\",\"instructions\":\"Please deliver it safely\",\"id\":1,\"customerId\":2},\"payment\":{},\"status\":\"pending\",\"paymentMethod\":\"Cash On Delivery\",\"customerId\":2,\"createdAt\":\"2016-07-29T07:55:00.572Z\",\"customer\":{\"firstName\":\"Akshay\",\"lastName\":\"Shrivastava\",\"email\":\"akshay.shrivastava@eulogik.com\",\"phone\":\"9926724315\",\"id\":2},\"id\":9}",
+      "10": "{\"cart\":[{\"productId\":3,\"variantId\":7,\"title\":\"Motorola G3\",\"variant\":\"Black\",\"price\":14999,\"salePrice\":12999,\"quantity\":1}],\"billing\":{},\"shipping\":{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"zip\":\"462001\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"H. No - 51 LLR Colony Bagh Dilkusha\",\"phone\":\"9926724315\",\"instructions\":\"Please Handle it with care !\",\"id\":3,\"customerId\":3},\"payment\":{},\"status\":\"pending\",\"paymentMethod\":\"Cash On Delivery\",\"customerId\":3,\"createdAt\":\"2016-07-29T10:30:57.977Z\",\"customer\":{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"email\":\"sumit.khajanchi@eulogik.com\",\"phone\":\"9926724315\",\"id\":3},\"id\":10}",
+      "11": "{\"cart\":[{\"productId\":1,\"variantId\":1,\"title\":\"iPhone 6\",\"variant\":\"golden\",\"price\":68000,\"salePrice\":65000,\"quantity\":4},{\"productId\":1,\"variantId\":2,\"title\":\"iPhone 6\",\"variant\":\"black\",\"price\":65000,\"salePrice\":62000,\"quantity\":1}],\"billing\":{},\"shipping\":{\"firstName\":\"Sunil\",\"lastName\":\"Bamre\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"H-No 31 Awadhpuri\",\"phone\":\"9898989890\",\"instructions\":\"Please deliver it on time.\",\"id\":5,\"customerId\":4},\"payment\":{},\"status\":\"pending\",\"paymentMethod\":\"Cash On Delivery\",\"customerId\":4,\"createdAt\":\"2016-07-29T13:26:00.212Z\",\"customer\":{\"firstName\":\"Sunil\",\"lastName\":\"Bamre\",\"email\":\"sunil.bamre@eulogik.com\",\"phone\":\"9898989890\",\"id\":4},\"id\":11}",
+      "12": "{\"cart\":[{\"productId\":3,\"variantId\":7,\"title\":\"Motorola G3\",\"variant\":\"Black\",\"price\":14999,\"salePrice\":12999,\"quantity\":1}],\"billing\":{},\"shipping\":{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"H.No 51 LLR Colony, Awadhpuri\",\"phone\":\"8956231452\",\"instructions\":\"Please deliver it safely\",\"id\":2,\"customerId\":2},\"payment\":{},\"status\":\"pending\",\"paymentMethod\":\"Cash On Delivery\",\"customerId\":2,\"createdAt\":\"2016-07-29T13:29:18.935Z\",\"customer\":{\"firstName\":\"Akshay\",\"lastName\":\"Shrivastava\",\"email\":\"akshay.shrivastava@eulogik.com\",\"phone\":\"9926724315\",\"id\":2},\"id\":12}",
+      "13": "{\"cart\":[{\"productId\":3,\"variantId\":7,\"title\":\"Motorola G3\",\"variant\":\"Black\",\"price\":14999,\"salePrice\":12999,\"quantity\":1}],\"billing\":{},\"shipping\":{\"firstName\":\"Sunil\",\"lastName\":\"Bamre\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"H-No 31 Awadhpuri\",\"phone\":\"9898989890\",\"instructions\":\"Please deliver it on time.\",\"id\":5,\"customerId\":4},\"payment\":{},\"status\":\"pending\",\"paymentMethod\":\"Cash On Delivery\",\"customerId\":4,\"createdAt\":\"2016-07-29T13:30:39.611Z\",\"customer\":{\"firstName\":\"Sunil\",\"lastName\":\"Bamre\",\"email\":\"sunil.bamre@eulogik.com\",\"phone\":\"9898989890\",\"id\":4},\"id\":13}",
+      "14": "{\"cart\":[{\"productId\":3,\"variantId\":7,\"title\":\"Motorola G3\",\"variant\":\"Black\",\"price\":14999,\"salePrice\":12999,\"quantity\":1}],\"billing\":{},\"shipping\":{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"zip\":\"462001\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"H. No - 51 LLR Colony Bagh Dilkusha\",\"phone\":\"9926724315\",\"instructions\":\"Please Handle it with care !\",\"id\":3,\"customerId\":3},\"payment\":{},\"status\":\"pending\",\"paymentMethod\":\"Cash On Delivery\",\"customerId\":3,\"createdAt\":\"2016-08-02T09:30:37.607Z\",\"customer\":{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"email\":\"sumit.khajanchi@eulogik.com\",\"phone\":\"9926724315\",\"id\":3},\"id\":14}",
+      "15": "{\"cart\":[{\"productId\":3,\"variantId\":7,\"title\":\"Motorola G3\",\"variant\":\"Black\",\"price\":14999,\"salePrice\":12999,\"quantity\":1}],\"billing\":{},\"shipping\":{\"firstName\":\"Sunil\",\"lastName\":\"Bamre\",\"zip\":\"462011\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"address\":\"H-No 31 Awadhpuri\",\"phone\":\"9898989890\",\"instructions\":\"Please deliver it on time.\",\"id\":5,\"customerId\":4},\"payment\":{},\"status\":\"pending\",\"paymentMethod\":\"Cash On Delivery\",\"customerId\":4,\"createdAt\":\"2016-08-02T09:38:31.557Z\",\"customer\":{\"firstName\":\"Sunil\",\"lastName\":\"Bamre\",\"email\":\"sunil.bamre@eulogik.com\",\"phone\":\"9898989890\",\"id\":4},\"id\":15}"
     },
     "stockEntry": {
       "3": "{\"quantity\":6,\"createdBy\":\"10\",\"createdAt\":\"2016-02-20T00:00:00.000Z\",\"note\":\"stock added\",\"variantId\":1,\"id\":3}",
@@ -87,16 +123,51 @@
       "8": "{\"quantity\":-2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T09:46:18.018Z\",\"note\":\"product purchased with quantity 2\",\"variantId\":1,\"id\":8}",
       "9": "{\"quantity\":2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T12:17:40.032Z\",\"note\":\"product cancelled (returned) with quantity 2\",\"variantId\":1,\"id\":9}",
       "10": "{\"quantity\":-2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T12:21:02.743Z\",\"note\":\"product purchased with quantity 2\",\"variantId\":1,\"id\":10}",
-      "11": "{\"quantity\":2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T12:21:20.643Z\",\"note\":\"product cancelled (returned) with quantity 2\",\"variantId\":1,\"id\":11}"
+      "11": "{\"quantity\":2,\"createdBy\":\"1\",\"createdAt\":\"2016-02-20T12:21:20.643Z\",\"note\":\"product cancelled (returned) with quantity 2\",\"variantId\":1,\"id\":11}",
+      "12": "{\"quantity\":1,\"createdBy\":\"1\",\"createdAt\":\"2016-05-03T06:17:20.255Z\",\"variantId\":1,\"operation\":\"add\",\"id\":12}",
+      "13": "{\"quantity\":23,\"createdBy\":\"1\",\"createdAt\":\"2016-05-06T12:26:51.430Z\",\"variantId\":2,\"operation\":\"add\",\"id\":13}",
+      "14": "{\"quantity\":-1,\"createdAt\":\"2016-07-25T11:33:43.182Z\",\"note\":\"product purchased with quantity 1\",\"variantId\":1,\"id\":14}",
+      "15": "{\"quantity\":-2,\"createdAt\":\"2016-07-25T12:10:01.768Z\",\"note\":\"product purchased with quantity 2\",\"variantId\":1,\"id\":15}",
+      "16": "{\"quantity\":-1,\"createdAt\":\"2016-07-25T12:14:19.880Z\",\"note\":\"product purchased with quantity 1\",\"variantId\":1,\"id\":16}",
+      "17": "{\"quantity\":-3,\"createdAt\":\"2016-07-26T10:05:35.437Z\",\"note\":\"product purchased with quantity 3\",\"variantId\":1,\"id\":17}",
+      "18": "{\"quantity\":-4,\"createdAt\":\"2016-07-26T10:05:35.438Z\",\"note\":\"product purchased with quantity 4\",\"variantId\":2,\"id\":18}",
+      "19": "{\"quantity\":-4,\"createdBy\":\"1\",\"createdAt\":\"2016-07-26T10:32:01.710Z\",\"note\":\"Item discarded\",\"variantId\":2,\"operation\":\"remove\",\"id\":19}",
+      "20": "{\"quantity\":1,\"createdBy\":\"1\",\"createdAt\":\"2016-07-26T11:02:45.195Z\",\"note\":\"One variant added on stock\",\"variantId\":1,\"operation\":\"add\",\"id\":20}",
+      "21": "{\"quantity\":1,\"createdBy\":\"1\",\"createdAt\":\"2016-07-26T11:03:12.682Z\",\"note\":\"stock added\",\"variantId\":1,\"operation\":\"add\",\"id\":21}",
+      "22": "{\"quantity\":-3,\"createdBy\":\"1\",\"createdAt\":\"2016-07-26T11:03:59.908Z\",\"note\":\"Item destroyed today\",\"variantId\":2,\"operation\":\"remove\",\"id\":22}",
+      "23": "{\"quantity\":5,\"createdBy\":\"1\",\"createdAt\":\"2016-07-26T11:27:59.996Z\",\"note\":\"5 Stock added today\",\"variantId\":7,\"operation\":\"add\",\"id\":23}",
+      "24": "{\"quantity\":-1,\"createdAt\":\"2016-07-29T07:55:00.605Z\",\"note\":\"product purchased with quantity 1\",\"variantId\":1,\"id\":24}",
+      "25": "{\"quantity\":-1,\"createdAt\":\"2016-07-29T07:55:00.606Z\",\"note\":\"product purchased with quantity 1\",\"variantId\":7,\"id\":25}",
+      "26": "{\"quantity\":-1,\"createdAt\":\"2016-07-29T10:30:58.029Z\",\"note\":\"product purchased with quantity 1\",\"variantId\":7,\"id\":26}",
+      "27": "{\"quantity\":-4,\"createdAt\":\"2016-07-29T13:26:00.262Z\",\"note\":\"product purchased with quantity 4\",\"variantId\":1,\"id\":27}",
+      "28": "{\"quantity\":-1,\"createdAt\":\"2016-07-29T13:26:00.263Z\",\"note\":\"product purchased with quantity 1\",\"variantId\":2,\"id\":28}",
+      "29": "{\"quantity\":-1,\"createdAt\":\"2016-07-29T13:29:18.970Z\",\"note\":\"product purchased with quantity 1\",\"variantId\":7,\"id\":29}",
+      "30": "{\"quantity\":-1,\"createdAt\":\"2016-07-29T13:30:39.629Z\",\"note\":\"product purchased with quantity 1\",\"variantId\":7,\"id\":30}",
+      "31": "{\"quantity\":-1,\"createdAt\":\"2016-08-02T09:30:37.645Z\",\"note\":\"product purchased with quantity 1\",\"variantId\":7,\"id\":31}",
+      "32": "{\"quantity\":-1,\"createdAt\":\"2016-08-02T09:38:31.565Z\",\"note\":\"product purchased with quantity 1\",\"variantId\":7,\"id\":32}",
+      "33": "{\"quantity\":5,\"createdBy\":\"1\",\"createdAt\":\"2016-08-02T09:39:47.005Z\",\"note\":\"Redmi new stock added\",\"variantId\":9,\"operation\":\"add\",\"id\":33}"
     },
     "Customer": {
       "1": "{\"firstName\":\"Demo\",\"lastName\":\"Customer\",\"id\":1,\"email\":\"customer@eulogik.com\",\"phone\":\"7778889994\",\"gender\":\"male\",\"createdAt\":\"2016-02-20T12:21:20.643Z\",\"updatedAt\":\"2016-03-04T10:52:33.045Z\"}",
       "2": "{\"email\":\"akshay.shrivastava@eulogik.com\",\"firstName\":\"Akshay\",\"lastName\":\"Shrivastava\",\"phone\":\"9926724315\",\"createdAt\":\"2016-02-20T12:21:20.643Z\",\"id\":2,\"gender\":\"male\",\"updatedAt\":\"2016-03-04T08:11:18.193Z\"}",
-      "3": "{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"email\":\"sumit.khajanchi@eulogik.com\",\"phone\":\"9926724315\",\"gender\":\"male\",\"id\":3}"
+      "3": "{\"firstName\":\"Sumit\",\"lastName\":\"Khajanchi\",\"email\":\"sumit.khajanchi@eulogik.com\",\"phone\":\"9926724315\",\"gender\":\"male\",\"id\":3,\"createdAt\":\"2016-07-29T12:18:50.428Z\"}",
+      "4": "{\"gender\":\"male\",\"firstName\":\"Sunil\",\"lastName\":\"Bamre\",\"email\":\"sunil.bamre@eulogik.com\",\"phone\":\"9898989890\",\"createdAt\":\"2016-07-29T12:18:50.428Z\",\"id\":4}"
     },
     "Zip": {},
     "Settings": {
-      "1": "{\"name\":\"Shop SQR\",\"address\":\"27, Noble Plaza Zone - II\",\"city\":\"Bhopal\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"phone\":9926724315,\"currency\":\"₹ Indian Rupees\",\"timezone\":\"+5:30 Kolkata/New Delhi\",\"emailAccount\":{\"email\":\"shopsqr@eulogik.com\",\"password\":\"shopsqr\"},\"pincode\":\"462011\",\"id\":1}"
+      "1": "{\"name\":\"Shop SQR\",\"address\":\"27, Noble Plaza Zone - II\",\"city\":\"Bhopally\",\"state\":\"Madhya Pradesh\",\"country\":\"India\",\"phone\":9926724315,\"currency\":\"₹ Indian Rupees\",\"timezone\":\"+5:30 Kolkata/New Delhi\",\"emailAccount\":{\"email\":\"shopsqr@eulogik.com\",\"password\":\"shopsqr\"},\"pincode\":\"462011\",\"id\":1}"
+    },
+    "CategoryProduct": {
+      "1": "{\"categoryId\":5,\"productId\":1,\"id\":1}",
+      "2": "{\"categoryId\":7,\"productId\":1,\"id\":2}",
+      "4": "{\"categoryId\":5,\"productId\":2,\"id\":4}",
+      "5": "{\"categoryId\":7,\"productId\":2,\"id\":5}",
+      "6": "{\"categoryId\":5,\"productId\":3,\"id\":6}",
+      "7": "{\"categoryId\":7,\"productId\":3,\"id\":7}",
+      "8": "{\"categoryId\":5,\"productId\":4,\"id\":8}",
+      "9": "{\"categoryId\":7,\"productId\":4,\"id\":9}",
+      "10": "{\"categoryId\":5,\"productId\":5,\"id\":10}",
+      "11": "{\"categoryId\":7,\"productId\":5,\"id\":11}"
     }
   }
 }

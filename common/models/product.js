@@ -48,32 +48,26 @@ module.exports = function(Product) {
 
 	Product.search = function(data, cb)
 	{
-		/* This search method is used for search only products not with variants as our need from front end */
-		// Product.find({where: {or:[{title: {like: data.search}},{brand: {like: data.search}}]}}, function(err, result)
-		// {
-		// 	if(result.length != 0)
-		// 	{
-		// 		cb(null, result);
-		// 		console.log(result);
-		// 	}
-		// 	else
-		// 	{
-		// 		cb(null, []);
-		// 	}
-		// });
+		Pro.find({ $text: { $search: obj.search }},{score: {$meta: "textScore"}}).sort({"score":{"$meta":"textScore"}}).toArray(function(err, product)
+    {
+    	console.log(product);
+    }); 
 
 		/* This search Method is used for search the product with its variant */
 		// console.log(data);
 		var searched = [];
 		Product.find({where: {or:[{title: {like: data.search}},{brand: {like: data.search}}]}, include:{relation:'variants'}}, function(err, result)
 		{
-			
 			if(result.length != 0)
 			{
-				result.forEach(function(record)
+				result.forEach(function(record, index)
 				{
 					searched.push(record.toJSON());
-					cb(null, result);
+
+					if((result.length-1) == index)
+					{
+						cb(null, result);
+					}
 				});
 			}
 			else

@@ -27,6 +27,7 @@
     "root": "./uploads"
   },
   "db-pro": {
+    "database": "shopsqr_db",
     "name": "db-pro",
     "connector": "mongodb"
   }

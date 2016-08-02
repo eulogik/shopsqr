@@ -29,6 +29,12 @@
     "products": {
       "type": "hasMany",
       "model": "Product",
+      "foreignKey": "",
+      "through": "CategoryProduct"
+    },
+    "categories": {
+      "type": "hasMany",
+      "model": "Category",
       "foreignKey": ""
     }
   },

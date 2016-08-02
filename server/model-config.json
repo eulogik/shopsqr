@@ -14,71 +14,71 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db-pro"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": false
   },
   "Email": {
     "dataSource": "Email"
   },
   "Product": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": true
   },
   "Category": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": true
   },
   "Variant": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "Address": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": true
   },
   "Cart": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "Order": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "stockEntry": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "Customer": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "Zip": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
     "public": true
   },
   "Container": {
@@ -86,7 +86,11 @@
     "public": true
   },
   "Settings": {
-    "dataSource": "db",
+    "dataSource": "db-pro",
+    "public": true
+  },
+  "CategoryProduct": {
+    "dataSource": "db-pro",
     "public": true
   }
 }
