@@ -13,13 +13,14 @@
       "type": "string",
       "index": true
     },
-    "brand": {
-      "type": "string"
-    },
     "tags": {
       "type": [
         "string"
       ],
+      "index": true
+    },
+    "brand": {
+      "type": "string",
       "index": true
     }
   },

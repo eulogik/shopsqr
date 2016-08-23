@@ -6,7 +6,26 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    }
+  },
   "validations": [],
   "relations": {
     "addresses": {

@@ -48,34 +48,38 @@ module.exports = function(Product) {
 
 	Product.search = function(data, cb)
 	{
-		Pro.find({ $text: { $search: obj.search }},{score: {$meta: "textScore"}}).sort({"score":{"$meta":"textScore"}}).toArray(function(err, product)
+		console.log(data.search);
+		var Pro = Product.getDataSource().connector.collection('Product');
+		
+		Pro.find({ $text: { $search: data.search }},{score: {$meta: "textScore"}}).sort({score:{$meta:"textScore"}}).toArray(function(err, product)
     {
     	console.log(product);
+    	console.log(err);
+    	cb(null, product);
     }); 
 
-		/* This search Method is used for search the product with its variant */
-		// console.log(data);
-		var searched = [];
-		Product.find({where: {or:[{title: {like: data.search}},{brand: {like: data.search}}]}, include:{relation:'variants'}}, function(err, result)
-		{
-			if(result.length != 0)
-			{
-				result.forEach(function(record, index)
-				{
-					searched.push(record.toJSON());
+		/* This Search Method is used for search the product with its variant */
+		// var searched = [];
+		// Product.find({where: {or:[{title: {like: data.search}},{brand: {like: data.search}}]}, include:{relation:'variants'}}, function(err, result)
+		// {
+		// 	if(result.length != 0)
+		// 	{
+		// 		result.forEach(function(record, index)
+		// 		{
+		// 			searched.push(record.toJSON());
 
-					if((result.length-1) == index)
-					{
-						cb(null, result);
-					}
-				});
-			}
-			else
-			{
-				cb(null, []);
-			}
-			// console.log(searched);
-		});
+		// 			if((result.length-1) == index)
+		// 			{
+		// 				cb(null, result);
+		// 			}
+		// 		});
+		// 	}
+		// 	else
+		// 	{
+		// 		cb(null, []);
+		// 	}
+		// 	// console.log(searched);
+		// });
 
 		// Product.app.models.Variant.find({where: {label: {like: data.search}}, include:{relation:'product'}}, function(err, result)
 		// {

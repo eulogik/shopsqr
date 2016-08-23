@@ -32,6 +32,12 @@
     },
     "paymentStatus": {
       "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "updatedAt": {
+      "type": "date"
     }
   },
   "validations": [],

@@ -14,4 +14,55 @@ module.exports = function(Customer) {
     });
     next();
   });
+
+  /* This remote method is for get the customer data group with createdAt */
+
+  Customer.getChartData = function(data, cb)
+  {
+    // console.log(data);
+    if(data.range != undefined)
+    {
+      if(data.range == "days")
+      {
+        var groupQuery = { $group : {_id : { month: { $month: "$createdAt" }, day: { $dayOfMonth: "$createdAt" }, year: { $year: "$createdAt" } },
+                                      count: { $sum: 1 }
+                                    }
+                          }
+      }
+      else if(data.range == "months")
+      {
+        var groupQuery = { $group : {_id : { month: { $month: "$createdAt" }, year: { $year: "$createdAt" } },
+                                      count: { $sum: 1 }
+                                    }
+                          }
+      }
+      else
+      {
+        var groupQuery = { $group : {_id : { year: { $year: "$createdAt" } },
+                                      count: { $sum: 1 }
+                                    }
+                          }
+      }
+    }
+    var Customers = Customer.getDataSource().connector.collection('Customer');
+    Customers.aggregate([ groupQuery ],function(err, groupByCustomers)
+    {
+      if(err)
+      {
+        console.log(err);
+        cb(null, err);
+      }
+      else
+      {
+        // console.log(groupByCustomers);
+        cb(null, groupByCustomers);
+      }
+    });
+  }
+
+  Customer.remoteMethod("getChartData",
+  {
+    accepts: {arg: "data", type: "object", http: {source: "body"}},
+    returns: {arg: "output", type: "object", http: {source: "body"}}
+  })
 };
